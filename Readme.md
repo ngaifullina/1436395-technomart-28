@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/28/user/1436395).
-* Наставник: `Неизвестно`.
+* Студент: [Нелли Гайфуллина](https://up.htmlacademy.ru/htmlcss/28/user/1436395).
+* Наставник: Константин Антонов (https://htmlacademy.ru/profile/rawle51)
 
 ---
 
