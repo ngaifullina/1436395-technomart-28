@@ -4,17 +4,24 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <style>
+  body {
+    background-color: aqua;
+  }
+</style>
 </head>
 
 <body>
   <header>
     <section>
-      <a><img src="https://via.placeholder.com/150x100" alt="Логотип Техномарт"></a>
-      <!-- todo form later -->
-      <button>Поиск</button>
+      <a href="index.html"><img src="img/svg-technomart/logo-technomart.svg" alt="Логотип"></a>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for="search"><img src="img/svg-technomart/icon-search.svg" alt="">Поиск:</label>
+        <input type="search" id="search">
+      </form>
       <ul>
-        <li><a href="blank.html">Закладки:0</a></li>
-        <li><a href="blank.html">Корзина:0</a></li>
+        <li><a href="blank.html"><img src="img/svg-technomart/icon-bookmark.svg" alt="">Закладки:0</a></li>
+        <li><a href="blank.html"><img src="img/svg-technomart/icon-cart.svg" alt="">Корзина:0</a></li>
         <li><a href="blank.html">Оформить заказ</a></li>
       </ul>
     </section>
@@ -22,7 +29,9 @@
     <section>
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <div>
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a href="tel:+78125550555">
+          <img src="img/svg-technomart/icon-phone.svg" alt="Телефон">+7 (812) 555-05-55
+        </a>
         <p>г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
       </div>
       <ul>
@@ -70,15 +79,36 @@
       <a href="#"><img src="img/map.png" width="300" height="158" alt="Карта"></a>
       <a href="blank.html">Заблудились? Напишите нам!</a>
     </section>
+    <img class ="visually-hidden" src="img/map popup.png">
+    <!-- карта скачалась вместе с кнопкой закрыть -->
+    <div class="visually-hidden">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <button type="button"><img src="img/svg-technomart/icon-close.svg" alt="close form"></button>
+        <p>
+          <label for="checkout_name">Ваше имя:</label>
+            <input id="checkout_name" type="text" name="name" placeholder="Имя Фамилия" required>
+        </p>
+        <p>
+          <label for="checkout_email">Ваш e-mail:</label>
+            <input id="checkout_email" type="email" name="email" placeholder="email@example.com" required>
+        </p>
+        <p>
+          <label for="checkout_message">Текст письма:</label>
+            <textarea id="checkout_message" name="message" placeholder="В свободной форме" required></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+    
   </main>
 
   <footer>
     <div>
-      <a><img src="https://via.placeholder.com/150x100" alt="Логотип Техномарт"></a>
+      <a href="index.html"><img src="img/svg-technomart/logo-technomart.svg" alt="Логотип"></a>
       <ul>
         <li><a href="blank.html">Компания</a></li>
         <li><a href="blank.html">Новости</a></li>
-        <li><a href="blank.html">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
         <li><a href="blank.html">Доставка</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
@@ -87,7 +117,7 @@
     <div>
       <div>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a href="tel:+78125550555" alt="Телефон">+7 (812) 555-05-55</a>
       </div>
       <ul>
         <li><a href="blank.html">Материалы</a></li>
@@ -100,20 +130,21 @@
     <div>
       <p>©2010—2019 Компания «Техномарт» Все права защищены</p>
       <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+        <li><a href="#"><img src="img/svg-technomart/icon-vk.svg" alt="Vkontakte"></a></li>
+        <li><a href="#"><img src="img/svg-technomart/icon-fb.svg" alt="Facebook"></a></li>
+        <li><a href="#"><img src="img/svg-technomart/icon-insta.svg" alt="Instagram"></a></li>
       </ul>
       <div>
         <div>
-          <p>Обратная связь:<a href="#">mail@htmlacademy.ru</a></p>
-          <p>
+          <p>Обратная связь:<a href="#" alt="Email">mail@htmlacademy.ru</a></p>
+          <p class="visually-hidden">
             Репозиторий создан для обучения на профессиональном онлайн‑курсе
             <a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>
+            <!-- todo css -->
           </p>
         </div>
         <div>
-          <p>Разработано —<a href="#">htmlacademy.ru</a></p>
+          <p>Разработано —<a href="#" alt="Перейти на сайт">htmlacademy.ru</a></p>
         </div>
       </div>
     </div>
