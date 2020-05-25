@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <!-- для проверки иконок в браузере -->
-  <!-- <style>
-    body {
-      background-color: aqua;
-    }
-  </style> -->
 </head>
 
 <body>
   <header>
     <section>
-      <a href="index.html"><img src="img/svg-technomart/logo-technomart.svg" alt="Логотип"></a>
+      <a href="index.html"></a>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <label for="search"><img src="img/svg-technomart/icon-search.svg">Поиск:</label>
+        <label for="search">Поиск:</label>
         <input type="search" id="search">
       </form>
       <ul>
-        <li><a href="blank.html"><img src="img/svg-technomart/icon-bookmark.svg">Закладки:0</a></li>
-        <li><a href="blank.html"><img src="img/svg-technomart/icon-cart.svg">Корзина:0</a></li>
+        <li><a href="blank.html">Закладки:0</a></li>
+        <li><a href="blank.html">Корзина:0</a></li>
         <li><a href="blank.html">Оформить заказ</a></li>
       </ul>
     </section>
@@ -30,7 +23,7 @@
     <section>
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <div>
-        <a href="tel:+78125550555"><img src="img/svg-technomart/icon-phone.svg">+7 (812) 555-05-55</a>
+        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
       </div>
       <ul>
@@ -40,7 +33,7 @@
     </section>
     <nav>
       <ul>
-        <li><a href="index.html">Главная</a></li>
+        <li><a href="blank.html">Главная</a></li>
         <li><a href="blank.html">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="blank.html">Новости</a></li>
@@ -49,19 +42,18 @@
         <li><a href="blank.html">Контакты</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main>
     <h1>Перфораторы</h1>
     <h4>Фильтр:</h4>
-    <form action="https://echo.htmlacademy.ru" method="get">
+    <!-- h4 потому что предполагаю, что их столько будет, после написания других блоков -->
+    <form action="https://echo.htmlacademy.ru" method="post">
     <fieldset>
       <!-- или тут не нужно в fieldset оборачивать? -->
       <legend>Цена:</legend>
       <label>
         <input type="range" name="price" min="0" max="30000" step="1">
-        <!-- двойной ползунок потом пишется в js? -->
         <input type="number">
         <p>—</p>
         <input type="number">
@@ -221,7 +213,7 @@
   </main>
   <footer>
     <div>
-      <a href="index.html"><img src="img/svg-technomart/logo-technomart.svg" alt="Логотип"></a>
+      <a href="index.html"></a>
       <ul>
         <li><a href="blank.html">Компания</a></li>
         <li><a href="blank.html">Новости</a></li>
@@ -247,18 +239,13 @@
     <div>
       <p>©2010—2019 Компания «Техномарт» Все права защищены</p>
       <ul>
-        <li><a href="#"><img src="img/svg-technomart/icon-vk.svg" alt="Vkontakte"></a></li>
-        <li><a href="#"><img src="img/svg-technomart/icon-fb.svg" alt="Facebook"></a></li>
-        <li><a href="#"><img src="img/svg-technomart/icon-insta.svg" alt="Instagram"></a></li>
+        <li><a href="#">Vkontakte</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
       </ul>
       <div>
         <div>
           <p>Обратная связь:<a href="#">mail@htmlacademy.ru</a></p>
-          <p>
-            Репозиторий создан для обучения на профессиональном онлайн‑курсе
-            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>
-            <!-- todo hide visually-hidden -->
-          </p>
         </div>
         <div>
           <p>Разработано —<a href="#">htmlacademy.ru</a></p>
@@ -266,7 +253,5 @@
       </div>
     </div>
   </footer>
-
 </body>
-
 </html>
