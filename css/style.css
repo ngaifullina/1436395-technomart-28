@@ -1,0 +1,141 @@
+:root {
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-grey: #3D546F;
+    --basic-greylight: #C5C5C5;
+    --basic-background: #F1F5F7;
+    --white: #FFFFFF;
+    --special-ylellow: #FFBF47;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-greenlight: #8ED78F;
+    --special-yellowlight: #FFD180;
+    --success: #5FBB2D;
+    --warning: #FFBF47;
+    --failure: #BA2732;
+    --light-grey: #EAEAEA;
+    --header-blue-dark: #293449;
+    --header-blue: #32425C;
+}
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    color: black;
+    background-color: white;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header,
+footer {
+    background-color: var(--basic-background);
+    font-family: Cuprum;
+}
+
+.logo-header {
+    background-color: var(--basic-red);
+    padding: 12px 57px 17px 55px;
+}
+
+.logo-footer {
+    background-color: var(--basic-red);
+    padding: 20px 41px 25px 41px;
+}
+
+header a,
+footer a,
+header form input,
+.blue-background p {
+    color: white;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+header p {
+    color: var(--header-blue);
+    font-size: 14px;
+}
+
+.blue-dark-background {
+    background-color: var(--header-blue-dark);
+}
+
+.blue-background {
+    background-color: var(--header-blue);
+}
+
+h1 {
+    color: var(--basic-red);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+h2 {
+    font-family: Cuprum;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.green-button {
+    background-color: var(--basic-green);
+}
+
+.telephone {
+    color: var(--basic-red);
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.registration {
+    color: black;
+    background-color: var(--white);
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.yellow {
+    color: var(--special-yellowlight);
+}
+
+.footer-bottom {
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+}
+
+main ul {
+    font-size: 18px;
+    font-family: Cuprum;
+}
+
+.red-button {
+    background-color: var(--basic-red);
+    color: var(--white);
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Cuprum;
+    text-transform: uppercase;
+}
