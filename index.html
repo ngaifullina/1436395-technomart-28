@@ -18,18 +18,14 @@
                 <img src="img/svg-technomart/logo-technomart.svg" alt="Логотип"></a>
             <form action="https://echo.htmlacademy.ru/courses" method="post">
                 <div><label for="search"></label>
-                    <input class="header-search blue-dark-background" type="search" id="search" value="Поиск:">
+                    <input class="header-search blue-dark-background" type="search" id="search" placeholder="Поиск:">
                 </div>
             </form>
             <ul>
                 <li class="dark-link"><a href="blank.html">Закладки:0</a></li>
                 <li class="dark-link"><a href="blank.html">Корзина:0</a></li>
-                <li class="to-make-an-order">
-                    <a href="blank.html">
-                        <div>Оформить заказ</div>
-                    </a>
-                </li>
             </ul>
+            <a class="to-make-an-order" href="blank.html"><span>Оформить заказ</span></a>
         </section>
 
         <section>
@@ -108,11 +104,11 @@
         <div class="blue-background">
             <a class="logo-footer" href="index.html"><img src="img/svg-technomart/logo-technomart.svg" alt="Логотип"></a>
             <ul>
-                <li><a href="blank.html">Компания</a></li>
-                <li><a href="blank.html">Новости</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="blank.html">Доставка</a></li>
-                <li><a href="blank.html">Контакты</a></li>
+                <li><a href="blank.html" class="link"><span class="text">Компания</span></a></li>
+                <li><a href="blank.html" class="active-primary"><span class="text">Новости</span></a></li>
+                <li><a href="catalog.html" class="active-primary"><span class="text">Каталог</span></a></li>
+                <li><a href="blank.html" class="active-primary"><span class="text">Доставка</span></a></li>
+                <li><a href="blank.html" class="active-secondary"><span class="text">Контакты</span></a></li>
             </ul>
         </div>
 
@@ -121,11 +117,14 @@
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <a href="tel:+78125550555">+7 (812) 555-05-55</a>
             </div>
-            <ul>
-                <li><a class="yellow" href="blank.html">Материалы</a></li>
-                <li><a class="yellow" href="blank.html">Техника</a></li>
-                <li><a class="yellow" href="blank.html">Инструмент</a></li>
-                <li><a class="yellow" href="blank.html">Спецпредложения</a></li>
+            <ul class="link-secondary active-primary">
+                <li>
+                    <a href="blank.html" class="link">
+                        <span class="text">Материалы</span></a>
+                </li>
+                <li><a href="blank.html"><span class="text">Техника</span></a></li>
+                <li><a href="blank.html"><span class="text">Инструмент</span></a></li>
+                <li><a href="blank.html"><span class="text">Спецпредложения</span></a></li>
             </ul>
         </div>
 
@@ -138,10 +137,10 @@
             </ul>
             <div>
                 <div>
-                    <p>Обратная связь:<a class="yellow" href="#">mail@htmlacademy.ru</a></p>
+                    <p>Обратная связь:<a class="link link-secondary link-active-highlight" href="#"><span class="text">mail@htmlacademy.ru</span></a></p>
                 </div>
                 <div>
-                    <p>Разработано —<a class="yellow" href="#">htmlacademy.ru</a></p>
+                    <p>Разработано —<a class="link link-secondary link-active-highlight" href="#"><span class="text">htmlacademy.ru</span></a></p>
                 </div>
             </div>
         </div>

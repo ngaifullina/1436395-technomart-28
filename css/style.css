@@ -130,6 +130,7 @@ h2 {
 }
 
 .to-make-an-order {
+    display: block;
     background-color: var(--basic-green);
 }
 
@@ -137,8 +138,20 @@ h2 {
     background-color: var(--success);
 }
 
-.to-make-an-order div:active {
+.to-make-an-order:active {
+    background-color: var(--basic-green);
+}
+
+.to-make-an-order:active span {
     opacity: 0.5;
+}
+
+header nav a:hover {
+    background-color: var(--header-blue-dark);
+}
+
+header nav a:active {
+    background-color: var(--dark-link);
 }
 
 .telephone {
@@ -154,9 +167,41 @@ h2 {
     line-height: 21px;
 }
 
-.yellow {
+.registration:hover {
+    color: var(--basic-red);
+}
+
+.registration:active {
+    color: var(--basic-greylight);
+}
+
+.link:hover .text {
+    text-decoration: underline;
+}
+
+.link:active .text {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.link-active-highlight:active .text {
+    opacity: 1;
+    color: var(--basic-red);
+}
+
+.link-secondary .text {
     color: var(--special-yellowlight);
 }
+
+
+/* 
+.active-primary:active .text {
+    opacity: 0.5;
+}
+
+.active-secondary:active .text {
+    color: red;
+} */
 
 .footer-bottom {
     font-size: 16px;
