@@ -16,6 +16,7 @@
     --light-grey: #EAEAEA;
     --header-blue-dark: #293449;
     --header-blue: #32425C;
+    --dark-link: #161D29;
 }
 
 body {
@@ -61,9 +62,13 @@ footer {
     padding: 20px 41px 25px 41px;
 }
 
+.logo-header:active,
+.logo-footer:active {
+    background-color: var(--failure);
+}
+
 header a,
 footer a,
-header form input,
 .blue-background p {
     color: white;
     font-size: 18px;
@@ -73,6 +78,31 @@ header form input,
 header p {
     color: var(--header-blue);
     font-size: 14px;
+}
+
+.header-search {
+    font-size: 18px;
+    font-family: Cuprum;
+    color: white;
+    background-color: var(--header-blue-dark);
+}
+
+.header-search:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header-search:focus {
+    background-color: var(--white);
+    color: black;
+}
+
+
+/* .header-search input:focus{
+    
+} */
+
+.dark-link:active {
+    background-color: var(--dark-link);
 }
 
 .blue-dark-background {
@@ -99,8 +129,16 @@ h2 {
     font-weight: normal;
 }
 
-.green-button {
+.to-make-an-order {
     background-color: var(--basic-green);
+}
+
+.to-make-an-order:hover {
+    background-color: var(--success);
+}
+
+.to-make-an-order div:active {
+    opacity: 0.5;
 }
 
 .telephone {
@@ -138,4 +176,16 @@ main ul {
     line-height: 18px;
     font-family: Cuprum;
     text-transform: uppercase;
+}
+
+.write-us {
+    font-family: Cuprum;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+main ::placeholder {
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
 }
