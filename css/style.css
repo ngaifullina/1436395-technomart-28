@@ -96,11 +96,6 @@ header p {
     color: black;
 }
 
-
-/* .header-search input:focus{
-    
-} */
-
 .dark-link:active {
     background-color: var(--dark-link);
 }

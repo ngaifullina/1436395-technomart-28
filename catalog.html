@@ -15,7 +15,7 @@
             <a href="index.html"><img src="img/svg-technomart/logo-technomart.svg" alt="Логотип"></a>
             <form action="https://echo.htmlacademy.ru/courses" method="post">
                 <label for="search">Поиск:</label>
-                <input type="search" id="search">
+                <input type="text" id="search">
             </form>
             <ul>
                 <li><a href="blank.html">Закладки:0</a></li>
@@ -53,43 +53,45 @@
         <h4>Фильтр:</h4>
         <!-- h4 потому что предполагаю, что их столько будет, после написания других блоков -->
         <form action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
-                <!-- или тут не нужно в fieldset оборачивать? -->
+            <div>
                 <legend>Цена:</legend>
-                <label>
-        <input type="range" name="price" min="0" max="30000" step="1">
-        <input type="text">
-        <p>—</p>
-        <input type="text">
-      </label>
-            </fieldset>
+                <div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <input type="text">
+                <span>—</span>
+                <input type="text">
+            </div>
             <fieldset>
                 <legend>Производители:</legend>
                 <ul>
                     <li>
                         <label>
-            <input type="checkbox" name="Bosch" checked>Bosch
-          </label>
+                            <input type="checkbox" name="Bosch" checked>Bosch
+                        </label>
                     </li>
                     <li>
                         <label>
-            <input type="checkbox" name="Interscol">Интерскол
-          </label>
+                            <input type="checkbox" name="Interscol">Интерскол
+                        </label>
                     </li>
                     <li>
                         <label>
-            <input type="checkbox" name="Makita" checked>Макита
-          </label>
+                            <input type="checkbox" name="Makita" checked>Макита
+                        </label>
                     </li>
                     <li>
                         <label>
-            <input type="checkbox" name="Dewalt">Dewalt
-          </label>
+                            <input type="checkbox" name="Dewalt">Dewalt
+                        </label>
                     </li>
                     <li>
                         <label>
-            <input type="checkbox" name="Hitachi">Hitachi
-          </label>
+                            <input type="checkbox" name="Hitachi">Hitachi
+                        </label>
                     </li>
                 </ul>
             </fieldset>
@@ -98,13 +100,13 @@
                 <ul>
                     <li>
                         <label>
-            <input type="radio" name="type" value="Rechargeable" checked>Аккумуляторные
-          </label>
+                            <input type="radio" name="type" value="Rechargeable" checked>Аккумуляторные
+                        </label>
                     </li>
                     <li>
                         <label>
-            <input type="radio" name="type" value="Network">Сетевые
-          </label>
+                            <input type="radio" name="type" value="Network">Сетевые
+                        </label>
                     </li>
                 </ul>
             </fieldset>
@@ -114,90 +116,72 @@
         <section>
             <ul>
                 <li>
-                    <div>
-                        <a href="blank.html">
-                            <img src="img/hammer_drill_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-                        </a>
-                    </div>
+                    <a href="blank.html">
+                        <img src="img/hammer_drill_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                    </a>
                     <h3><a href="blank.html">Перфоратор BOSCH BFG 6000</a></h3>
                     <p>30500 Р.</p>
                     <p>25500 Р.</p>
                 </li>
                 <li>
-                    <div>
-                        <a href="blank.html">
-                            <img src="img/hammer_drill_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-                        </a>
-                    </div>
+                    <a href="blank.html">
+                        <img src="img/hammer_drill_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                    </a>
                     <h3><a href="blank.html">Перфоратор BOSCH BFG 6000</a></h3>
                     <p>30500 Р.</p>
                     <p>25500 Р.</p>
                 </li>
                 <li>
-                    <div>
-                        <a href="blank.html">
-                            <img src="img/hammer_drill_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-                        </a>
-                    </div>
+                    <a href="blank.html">
+                        <img src="img/hammer_drill_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                    </a>
                     <h3><a href="blank.html">Перфоратор BOSCH BFG 6000</a></h3>
                     <p>30500 Р.</p>
                     <p>25500 Р.</p>
                 </li>
                 <li>
-                    <div>
-                        <a href="blank.html">
-                            <img src="img/hammer_drill_3000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
-                        </a>
-                    </div>
+                    <a href="blank.html">
+                        <img src="img/hammer_drill_3000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
+                    </a>
                     <h3><a href="blank.html">Перфоратор BOSCH BFG 3000</a></h3>
                     <p>22500 Р.</p>
                     <p>15500 Р.</p>
                 </li>
                 <li>
-                    <div>
-                        <a href="blank.html">
-                            <img src="img/hammer_drill_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-                        </a>
-                    </div>
+                    <a href="blank.html">
+                        <img src="img/hammer_drill_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                    </a>
                     <h3><a href="blank.html">Перфоратор BOSCH BFG 6000</a></h3>
                     <p>30500 Р.</p>
                     <p>25500 Р.</p>
                 </li>
                 <li>
-                    <div>
-                        <a href="blank.html">
-                            <img src="img/hammer_drill_2000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
-                        </a>
-                    </div>
+                    <a href="blank.html">
+                        <img src="img/hammer_drill_2000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
+                    </a>
                     <h3><a href="blank.html">Перфоратор BOSCH BFG 2000</a></h3>
                     <p>12500 Р.</p>
                 </li>
                 <li>
-                    <div>
-                        <a href="blank.html">
-                            <img src="img/hammer_drill_3000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
-                        </a>
-                    </div>
+                    <a href="blank.html">
+                        <img src="img/hammer_drill_3000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
+                    </a>
                     <h3><a href="blank.html">Перфоратор BOSCH BFG 3000</a></h3>
                     <p>22500 Р.</p>
                     <p>15500 Р.</p>
                 </li>
                 <li>
-                    <div>
-                        <a href="blank.html">
-                            <img src="img/hammer_drill_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-                        </a>
-                    </div>
+                    <a href="blank.html">
+                        <img src="img/hammer_drill_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                    </a>
                     <h3><a href="blank.html">Перфоратор BOSCH BFG 6000</a></h3>
                     <p>30500 Р.</p>
                     <p>25500 Р.</p>
                 </li>
                 <li>
-                    <div>
-                        <a href="blank.html">
-                            <img src="img/hammer_drill_2000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
-                        </a>
-                    </div>
+                    <a href="blank.html">
+                        <img src="img/hammer_drill_2000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
+                    </a>
                     <h3><a href="blank.html">Перфоратор BOSCH BFG 2000</a></h3>
                     <p>12500 Р.</p>
                 </li>
