@@ -1,51 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <section>
-            <a href="index.html"><img src="img/svg-technomart/logo-technomart.svg" alt="Логотип"></a>
-            <form action="https://echo.htmlacademy.ru/courses" method="post">
-                <label for="search">Поиск:</label>
-                <input type="text" id="search">
-            </form>
-            <ul>
-                <li><a href="blank.html">Закладки:0</a></li>
-                <li><a href="blank.html">Корзина:0</a></li>
-                <li><a href="blank.html">Оформить заказ</a></li>
-            </ul>
-        </section>
+      <section class="blue-dark-background">
+        <a href="index.html" class="logo">
+          <img src="img/svg-technomart/logo-technomart.svg" alt="Логотип" />
+        </a>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <div>
+            <label for="search"></label>
+            <input
+              class="link-primary link-secondary nav__link nav__link-secondary header-search blue-dark-background"
+              type="text"
+              id="search"
+              placeholder="Поиск:"
+            />
+          </div>
+        </form>
+        <ul class="list-unstyle">
+          <li class="dark-link">
+            <a class="link-primary link-secondary nav__link nav__link-secondary" href="blank.html">Закладки: 0</a>
+          </li>
+          <li class="dark-link">
+            <a class="button button__to-make-an-order" href="blank.html">Корзина: 10</a>
+          </li>
+        </ul>
+        <a class="button button-secondary button__to-make-an-order" href="blank.html">Оформить заказ
+        </a>
+      </section>
 
-        <section>
-            <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-            <div>
-                <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-                <p>г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
-            </div>
-            <ul>
-                <li><a href="blank.html">Войти</a></li>
-                <li><a href="blank.html">Регистрация</a></li>
+      <section>
+        <h1>
+          Интернет-магазин строительных материалов и инструментов для ремонта
+        </h1>
+        <div>
+          <a class="telephone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="registration-catalog adress">г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+        </div>
+        <div>
+            <a class="registration registration-2" href="blank.html">Равшан Джамшутович</a>
+            <ul class="list-unstyle">
+                <li><a class="registration registration-catalog" href="blank.html">Мои заказы</a></li>
+                <li><a class="registration registration-catalog" href="blank.html">Личный кабинет</a></li>
             </ul>
-        </section>
-        <nav>
-            <ul>
-                <li><a href="blank.html">Главная</a></li>
-                <li><a href="blank.html">Компания</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="blank.html">Новости</a></li>
-                <li><a href="blank.html">Спецпредложения</a></li>
-                <li><a href="blank.html">Доставка</a></li>
-                <li><a href="blank.html">Контакты</a></li>
-            </ul>
-        </nav>
+         </div>
+      </section>
+      <nav class="blue-background">
+        <ul class="list-unstyle">
+          <li>
+            <a class="link-primary link-secondary nav__link"  href="blank.html">Главная</a>
+          </li>
+          <li>
+            <a class="link-primary link-secondary nav__link"  href="blank.html">Компания</a>
+          </li>
+          <li>
+            <a class="link-primary link-secondary nav__link"  href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a class="link-primary link-secondary nav__link"  href="blank.html">Новости</a>
+          </li>
+          <li>
+            <a class="link-primary link-secondary nav__link"  href="blank.html">Спецпредложения</a>
+          </li>
+          <li>
+            <a class="link-primary link-secondary nav__link"  href="blank.html">Доставка</a>
+          </li>
+          <li>
+            <a class="link-primary link-secondary nav__link"  href="blank.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -116,18 +149,19 @@
         <section>
             <ul>
                 <li>
-                    <a href="blank.html">
+                    <a class="product" href="blank.html">
                         <img src="img/hammer_drill_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                        <h3 class="product__heading" >Перфоратор BOSCH BFG 6000</h3>
+                        <p>30500 р.</p>
+                        <div class="button">25500 р.</div>
                     </a>
-                    <h3><a href="blank.html">Перфоратор BOSCH BFG 6000</a></h3>
-                    <p>30500 Р.</p>
-                    <p>25500 Р.</p>
+                   
                 </li>
                 <li>
-                    <a href="blank.html">
+                    
                         <img src="img/hammer_drill_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                     </a>
-                    <h3><a href="blank.html">Перфоратор BOSCH BFG 6000</a></h3>
+                    <h3>Перфоратор BOSCH BFG 6000</a></h3>
                     <p>30500 Р.</p>
                     <p>25500 Р.</p>
                 </li>
@@ -199,47 +233,73 @@
         </section>
     </main>
     <footer>
-        <div>
-            <a href="index.html"><img src="img/svg-technomart/logo-technomart.svg" alt="Логотип"></a>
-            <ul>
-                <li><a href="blank.html">Компания</a></li>
-                <li><a href="blank.html">Новости</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="blank.html">Доставка</a></li>
-                <li><a href="blank.html">Контакты</a></li>
-            </ul>
+        <div class="blue-background">
+          <a class="logo logo-footer" href="index.html">
+            <img src="img/svg-technomart/logo-technomart.svg" alt="Логотип" />
+          </a>
+          <ul class="list-unstyle">
+            <li>
+              <a href="blank.html" class="link-primary link-secondary">Компания</a>
+            </li>
+            <li>
+              <a href="blank.html" class="link-primary link-secondary">Новости</a>
+            </li>
+            <li>
+              <a href="catalog.html" class="link-primary link-secondary">Каталог</a>
+            </li>
+            <li>
+              <a href="blank.html" class="link-primary link-secondary">Доставка</a>
+            </li>
+            <li>
+              <a href="blank.html" class="link-primary link-secondary">Контакты</a>
+            </li>
+          </ul>
         </div>
-
-        <div>
+  
+        <div class="blue-background">
+          <div>
+            <p class="paragraph">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a class="paragraph" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </div>
+          <ul class="list-unstyle">
+            <li>
+              <a href="blank.html" class="link-primary">Материалы</a>
+            </li>
+            <li>
+              <a href="blank.html" class="link-primary">Техника</a>
+            </li>
+            <li>
+              <a href="blank.html" class="link-primary">Инструмент</a>
+            </li>
+            <li>
+              <a href="blank.html" class="link-primary">Спецпредложения</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="blue-dark-background footer-bottom">
+          <p class="paragraph paragraph-2">©2010—2019 Компания «Техномарт» Все права защищены</p>
+          <ul class="list-unstyle">
+            <li><a href="#">Vkontakte</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+          <div>
             <div>
-                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+              <p class="paragraph paragraph-2">
+                Обратная связь:
+                <a class="link-primary link-secondary link-thirdly" href="#">mail@htmlacademy.ru</a>
+              </p>
             </div>
-            <ul>
-                <li><a href="blank.html">Материалы</a></li>
-                <li><a href="blank.html">Техника</a></li>
-                <li><a href="blank.html">Инструмент</a></li>
-                <li><a href="blank.html">Спецпредложения</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <p>©2010—2019 Компания «Техномарт» Все права защищены</p>
-            <ul>
-                <li><a href="#">Vkontakte</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
             <div>
-                <div>
-                    <p>Обратная связь:<a href="#">mail@htmlacademy.ru</a></p>
-                </div>
-                <div>
-                    <p>Разработано —<a href="#">htmlacademy.ru</a></p>
-                </div>
+              <p class="paragraph paragraph-2">
+                Разработано —
+                <a class="link-primary link-secondary link-thirdly" href="#">htmlacademy.ru</a>
+              </p>
             </div>
+          </div>
         </div>
-    </footer>
-</body>
-
-</html>
+      </footer>
+    </body>
+  </html>
+  
