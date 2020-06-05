@@ -15,42 +15,65 @@
   --warning: #ffbf47;
   --failure: #ba2732;
   --light-grey: #eaeaea;
-  --header-blue-dark: #293449;
-  --header-blue: #32425c;
+  --blue-dark: #293449;
+  --blue: #32425c;
   --dark-link: #161d29;
   --black: #000;
+  --catalog-colored-heading: #f7f3ec;
+  --old-price: #a9a9a9;
+  --button-active: #518534;
 
   /* theme */
+  --background-color-1: #f3f7f9;
+  --background-color-2: var(--blue-dark);
+  --background-color-3: var(--blue);
+
   --font-primary: "PT Sans", Arial, sans-serif;
   --font-secondary: Cuprum, sans-serif;
 
-  --button-primary-bg: var(--basic-red);
-  --button-primary-bg-hover: #f04d58;
-  --button-primary-bg-active: var(--failure);
-  --button-primary-text-color: var(--white);
-  --button-primary-text-color-hover: var(--white);
-  --button-primary-text-color-active: var(--white);
+  --font-color: var(--black);
+  --font-color-secondary: var(--white);
+
+  --button-bg: var(--basic-red);
+  --button-bg-hover: #f04d58;
+  --button-bg-active: var(--failure);
+  --button-text-color: var(--white);
+  --button-text-color-hover: var(--white);
+  --button-text-color-active: var(--white);
 
   --button-secondary-bg: var(--basic-green);
   --button-secondary-bg-hover: var(--success);
-  --button-secondary-bg-active: #518534;
+  --button-secondary-bg-active: var(--button-active);
   --button-secondary-text: var(--white);
   --button-secondary-text-hover: var(--white);
   --button-secondary-text-active: var(--white);
 
-  --link-primary-color: var(--special-yellowlight);
-  --link-primary-color-active: rgba(255, 209, 128, 0.5);
+  --button-tertiary-color: var(--blue);
+  --button-tertiary-border: var(--basic-green);
+  --button-tertiary-color-hover: var(--blue);
+  --button-tertiary-border-hover: var(--blue);
+
+  --link-color: var(--special-yellowlight);
+  --link-color-active: rgba(255, 209, 128, 0.5);
   --link-secondary-color: var(--white);
   --link-secondary-color-active: rgba(255, 255, 255, 0.5);
   --link-thirdly-color-active: var(--basic-red);
 
-  --nav-link-bg: var(--header-blue);
-  --nav-link-bg-hover: var(--header-blue-dark);
+  --nav-link-bg: var(--blue);
+  --nav-link-bg-hover: var(--blue-dark);
   --nav-link-bg-active: #1d2739;
   --nav-link-color-active: rgba(255, 255, 255, 0.5);
-  --nav-link-secondary-bg: var(--header-blue-dark);
+  --nav-link-secondary-bg: var(--blue-dark);
   --nav-link-secondary-bg-active: var(--dark-link);
   --nav-link-secondary-color-active: rgba(255, 255, 255, 0.5);
+
+  --heading-color-1: var(--blue);
+  --heading-color-2: var(--black);
+  --header-heading-color: var(--basic-red);
+
+  --panel-bg-color: #f2f6f8;
+  --panel-secondary-bg-color: #f9f5f0;
+  --panel-filter: #f7f3ec;
 }
 
 body {
@@ -61,11 +84,18 @@ body {
   font-style: normal;
   font-size: 13px;
   line-height: 24px;
-  color: black;
+  color: var(--font-color);
 }
+
+.font-secondary {
+  font-family: var(--font-secondary);
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
 }
+
 .list-unstyle {
   list-style-type: none;
 }
@@ -73,13 +103,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-header,
-footer {
-  background-color: var(--basic-background);
-  font-family: var(--font-secondary);
-  font-style: normal;
 }
 
 .logo {
@@ -96,39 +119,35 @@ footer {
   padding: 20px 41px 25px 41px;
 }
 
-.blue-dark-background {
-  background-color: var(--header-blue-dark);
+.header {
+  background-color: var(--background-color-1);
 }
 
-.blue-background {
-  background-color: var(--header-blue);
+.header__top-contols {
+  background-color: var(--background-color-2);
 }
 
-h1 {
-  color: var(--basic-red);
-  font-style: italic;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 23px;
+.header__navigation {
+  background-color: var(--background-color-3);
 }
 
-h2 {
-  font-family: var(--font-secondary);
-  font-style: normal;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: normal;
+.footer {
+  background-color: var(--background-color-3);
 }
 
-.telephone {
+.footer_contacts {
+  background-color: var(--background-color-2);
+}
+
+.header__phone {
   color: var(--basic-red);
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
+  border: solid var(--white) 3px;
 }
 
-.registration {
+.header__login {
   display: inline-block;
   color: var(--black);
   background-color: var(--white);
@@ -137,46 +156,53 @@ h2 {
   padding: 12px 27px 12px 19px;
 }
 
-.registration:hover {
+.header__login:hover {
   color: var(--basic-red);
 }
-.registration-2:hover {
-  color: var(--black);
 
+.header__login_in:hover {
+  color: var(--black);
 }
-.registration:active {
+
+.header__login:active {
   color: var(--basic-greylight);
 }
+.header__login_catalog {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--blue);
+  background-color: inherit;
+}
 
-.link-primary {
+.link {
   /* жёлтый по умолчанию, чтобы было видно
        как на чёрном, так и на белом фоне */
-  color: var(--link-primary-color);
+  color: var(--link-color);
   font-size: 18px;
 }
 
-.link-primary:hover {
+.link:hover {
   text-decoration: underline;
 }
 
-.link-primary:active {
-  color: var(--link-primary-color-active);
+.link:active {
+  color: var(--link-color-active);
 }
 
-.link-secondary {
+.link_secondary {
   color: var(--white);
 }
 
-.link-secondary:active {
+.link_secondary:active {
   color: var(--link-secondary-color-active);
 }
 
-.link-thirdly {
+.link_tertiary {
   font-size: 16px;
   line-height: 18px;
 }
 
-.link-thirdly:active {
+.link_tertiary:active {
   text-decoration: none;
   color: var(--link-thirdly-color-active);
 }
@@ -196,51 +222,47 @@ h2 {
   background-color: var(--nav-link-bg-active);
   color: var(--nav-link-color-active);
 }
-.nav__link-secondary {
+.nav__link_secondary {
   color: white;
   background-color: var(--nav-link-secondary-bg);
 }
 
-.nav__link-secondary:active {
+.nav__link_secondary:active {
   background-color: var(--nav-link-secondary-bg-active);
   color: var(--nav-link-secondary-color-active);
 }
 
-.header-search:active {
+.header__search:active {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.header-search:focus {
+.header__search:focus {
   background-color: var(--white);
   color: black;
 }
-main ::placeholder {
+
+.header__search ::placeholder {
   font-family: var(--font-primary);
   font-style: normal;
   font-size: 13px;
   line-height: 24px;
   color: white;
+  /* todo fix */
 }
 
-.basket-catalog {
+.header__cart {
   text-transform: none;
 }
 
-.registration-catalog {
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--header-blue);
-  background-color: inherit;
-}
-
-.adress {
+.header__adress {
   font-size: 14px;
   line-height: 24px;
 }
+
 .button {
   display: inline-block;
-  background-color: var(--button-primary-bg);
-  color: var(--button-primary-text-color);
+  background-color: var(--button-bg);
+  color: var(--button-text-color);
   font-family: var(--font-secondary);
   text-transform: uppercase;
   font-size: 14px;
@@ -249,32 +271,30 @@ main ::placeholder {
 }
 
 .button:hover {
-  /* display: none; */
-  background-color: var(--button-primary-bg-hover);
-  color: var(--button-primary-text-color-hover);
+  background-color: var(--button-bg-hover);
+  color: var(--button-text-color-hover);
 }
 
 .button:active {
-  background-color: var(--button-primary-bg-active);
-  color: var(--button-primary-text-color-active);
+  background-color: var(--button-bg-active);
+  color: var(--button-text-color-active);
 }
 
-.button-secondary {
+.button_secondary {
   background-color: var(--button-secondary-bg);
-  color: var(--button-secondary-text);
 }
 
-.button-secondary:hover {
+.button_secondary:hover {
   background-color: var(--button-secondary-bg-hover);
   color: var(--button-secondary-text-hover);
 }
 
-.button-secondary:active {
-  background-color: var(--button-secondary-bg-active);
+.button_secondary:active {
+  background-color: var(--button-active);
   color: var(--button-secondary-text-active);
 }
 
-.button__to-make-an-order {
+.header__shopping-controls {
   display: inline-block;
   font-size: 18px;
   line-height: 24px;
@@ -282,20 +302,139 @@ main ::placeholder {
   text-transform: none;
 }
 
-.button__to-make-an-order:active {
-  background-color: var(--basic-green);
+.header__shopping-controls:active {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.paragraph {
+.button_tertiary {
+  color: var(--button-tertiary-color);
+  outline: var(--button-tertiary-border) solid 3px;
+  background-color: var(--white);
+  /* todo скруглить углы */
+}
+
+.button_tertiary:hover {
+  outline-color: var(--button-tertiary-border-hover);
+  background-color: inherit;
+  color: inherit;
+}
+
+.button_tertiary:active {
+  outline-color: var(--button-tertiary-border-hover);
+  opacity: 0.5;
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-style {
   color: var(--white);
   font-size: 18px;
 }
 
-.paragraph-2 {
+.text-style-2 {
+  color: var(--white);
   font-size: 16px;
   line-height: 18px;
 }
+
+.text-style-3 {
+  font-size: 18px;
+  line-height: 24px;
+}
 .product {
   display: block;
+}
+
+.header__heading {
+  color: var(--header-heading-color);
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.heading-2 {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--heading-color-1);
+  padding: 29px;
+}
+
+.heading-2_secondary {
+  color: var(--heading-color-2);
+}
+.heading-4 {
+  display: inline-block;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--heading-color-2);
+}
+
+.heading-4_secondary {
+  opacity: 0.3;
+  border: 1px;
+  border-bottom-style: dotted;
+  border-color: var(--basic-red);
+}
+
+.heading-4_secondary:hover {
+  opacity: 1;
+  color: var(--heading-color-2);
+  border-bottom-style: solid;
+}
+
+.heading-4_secondary:active {
+  color: var(--header-heading-color);
+  border-bottom-style: none;
+}
+
+.heading-filter {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.product__heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.product__old-price {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--old-price);
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+}
+
+.product__new-price {
+  font-weight: bold;
+  font-size: 17px;
+}
+.panel {
+  background-color: var(--panel-bg-color);
+}
+
+.panel_secondary {
+  background-color: var(--panel-secondary-bg-color);
+}
+
+.panel_filter-sort {
+  background-color: var(--panel-filter);
 }

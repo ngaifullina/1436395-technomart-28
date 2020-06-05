@@ -10,8 +10,8 @@
   </head>
 
   <body>
-    <header>
-      <section class="blue-dark-background">
+    <header class="header font-secondary">
+      <section class="header__top-contols">
         <a href="index.html" class="logo">
           <img src="img/svg-technomart/logo-technomart.svg" alt="Логотип" />
         </a>
@@ -19,7 +19,7 @@
           <div>
             <label for="search"></label>
             <input
-              class="link-primary link-secondary nav__link nav__link-secondary header-search blue-dark-background"
+              class="link link_secondary nav__link nav__link_secondary header__search"
               type="text"
               id="search"
               placeholder="Поиск:"
@@ -28,51 +28,80 @@
         </form>
         <ul class="list-unstyle">
           <li class="dark-link">
-            <a class="link-primary link-secondary nav__link nav__link-secondary" href="blank.html">Закладки: 0</a>
+            <a
+              class="link link_secondary nav__link nav__link_secondary"
+              href="blank.html"
+            >
+              Закладки: 0
+            </a>
           </li>
           <li class="dark-link">
-            <a class="link-primary link-secondary nav__link nav__link-secondary" href="blank.html">Корзина: 0</a>
+            <a
+              class="link link_secondary nav__link nav__link_secondary"
+              href="blank.html"
+            >
+              Корзина: 0
+            </a>
           </li>
         </ul>
-        <a class="button button-secondary button__to-make-an-order" href="blank.html">Оформить заказ
+        <a
+          class="button button_secondary header__shopping-controls "
+          href="blank.html"
+          >Оформить заказ
         </a>
       </section>
 
       <section>
-        <h1>
+        <h1 class="header__heading">
           Интернет-магазин строительных материалов и инструментов для ремонта
         </h1>
         <div>
-          <a class="telephone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p class="registration-catalog adress">г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+          <a class="header__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="header__adress">
+            г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+          </p>
         </div>
         <ul class="list-unstyle">
-          <li><a class="registration" href="blank.html">Войти</a></li>
-          <li><a class="registration" href="blank.html">Регистрация</a></li>
+          <li><a class="header__login " href="blank.html">Войти</a></li>
+          <li><a class="header__login " href="blank.html">Регистрация</a></li>
         </ul>
       </section>
-      <nav class="blue-background">
+      <nav class="header__navigation">
         <ul class="list-unstyle">
           <li>
-            <a class="link-primary link-secondary nav__link"  href="blank.html">Главная</a>
+            <a class="link link_secondary nav__link" href="blank.html"
+              >Главная</a
+            >
           </li>
           <li>
-            <a class="link-primary link-secondary nav__link"  href="blank.html">Компания</a>
+            <a class="link link_secondary nav__link" href="blank.html"
+              >Компания</a
+            >
           </li>
           <li>
-            <a class="link-primary link-secondary nav__link"  href="catalog.html">Каталог</a>
+            <a class="link link_secondary nav__link" href="catalog.html"
+              >Каталог</a
+            >
           </li>
           <li>
-            <a class="link-primary link-secondary nav__link"  href="blank.html">Новости</a>
+            <a class="link link_secondary nav__link" href="blank.html"
+              >Новости</a
+            >
           </li>
           <li>
-            <a class="link-primary link-secondary nav__link"  href="blank.html">Спецпредложения</a>
+            <a class="link link_secondary nav__link" href="blank.html"
+              >Спецпредложения</a
+            >
           </li>
           <li>
-            <a class="link-primary link-secondary nav__link"  href="blank.html">Доставка</a>
+            <a class="link link_secondary nav__link" href="blank.html"
+              >Доставка</a
+            >
           </li>
           <li>
-            <a class="link-primary link-secondary nav__link"  href="blank.html">Контакты</a>
+            <a class="link link_secondary nav__link" href="blank.html"
+              >Контакты</a
+            >
           </li>
         </ul>
       </nav>
@@ -80,7 +109,7 @@
 
     <main>
       <section>
-        <h2>Компания «Техномарт»</h2>
+        <h2 class="heading-2 heading-2_secondary">Компания «Техномарт»</h2>
         <p>
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
           ремонта и строительства не оставит равнодушными любителей сэкономить
@@ -90,7 +119,7 @@
           Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:
         </p>
-        <ul class="list-unstyle main-ul">
+        <ul class="text-style-3 list-unstyle">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
@@ -99,14 +128,12 @@
       </section>
 
       <section>
-        <h2>Контакты</h2>
+        <h2 class="heading-2 heading-2_secondary">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <a href="#"
           ><img src="img/map.png" width="300" height="158" alt="Карта"
         /></a>
-        <a class="button" href="blank.html"
-          >Заблудились? Напишите нам!</a
-        >
+        <a class="button" href="blank.html">Заблудились? Напишите нам!</a>
       </section>
       <div>
         <img src="img/map popup.png" />
@@ -117,7 +144,7 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <button type="button"></button>
           <p>
-            <label  for="checkout_name">Ваше имя:</label>
+            <label for="checkout_name">Ваше имя:</label>
             <input
               id="checkout_name"
               type="text"
@@ -127,7 +154,7 @@
             />
           </p>
           <p>
-            <label  for="checkout_email">Ваш e-mail:</label>
+            <label for="checkout_email">Ваш e-mail:</label>
             <input
               id="checkout_email"
               type="email"
@@ -137,7 +164,7 @@
             />
           </p>
           <p>
-            <label  for="checkout_message">Текст письма:</label>
+            <label for="checkout_message">Текст письма:</label>
             <textarea
               id="checkout_message"
               name="message"
@@ -150,53 +177,65 @@
       </div>
     </main>
 
-    <footer>
-      <div class="blue-background">
+    <footer class="footer font-secondary">
+      <div>
         <a class="logo logo-footer" href="index.html">
           <img src="img/svg-technomart/logo-technomart.svg" alt="Логотип" />
         </a>
         <ul class="list-unstyle">
           <li>
-            <a href="blank.html" class="link-primary link-secondary">Компания</a>
+            <a href="blank.html" class="link link_secondary"
+              >Компания</a
+            >
           </li>
           <li>
-            <a href="blank.html" class="link-primary link-secondary">Новости</a>
+            <a href="blank.html" class="link link_secondary">Новости</a>
           </li>
           <li>
-            <a href="catalog.html" class="link-primary link-secondary">Каталог</a>
+            <a href="catalog.html" class="link link_secondary"
+              >Каталог</a
+            >
           </li>
           <li>
-            <a href="blank.html" class="link-primary link-secondary">Доставка</a>
+            <a href="blank.html" class="link link_secondary"
+              >Доставка</a
+            >
           </li>
           <li>
-            <a href="blank.html" class="link-primary link-secondary">Контакты</a>
+            <a href="blank.html" class="link link_secondary"
+              >Контакты</a
+            >
           </li>
         </ul>
       </div>
 
-      <div class="blue-background">
+      <div>
         <div>
-          <p class="paragraph">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a class="paragraph" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="text-style">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+          <a class="text-style" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
         <ul class="list-unstyle">
           <li>
-            <a href="blank.html" class="link-primary">Материалы</a>
+            <a href="blank.html" class="link">Материалы</a>
           </li>
           <li>
-            <a href="blank.html" class="link-primary">Техника</a>
+            <a href="blank.html" class="link">Техника</a>
           </li>
           <li>
-            <a href="blank.html" class="link-primary">Инструмент</a>
+            <a href="blank.html" class="link">Инструмент</a>
           </li>
           <li>
-            <a href="blank.html" class="link-primary">Спецпредложения</a>
+            <a href="blank.html" class="link">Спецпредложения</a>
           </li>
         </ul>
       </div>
 
-      <div class="blue-dark-background footer-bottom">
-        <p class="paragraph paragraph-2">©2010—2019 Компания «Техномарт» Все права защищены</p>
+      <div class="footer_contacts footer-bottom">
+        <p class="text-style-2 ">
+          ©2010—2019 Компания «Техномарт» Все права защищены
+        </p>
         <ul class="list-unstyle">
           <li><a href="#">Vkontakte</a></li>
           <li><a href="#">Facebook</a></li>
@@ -204,15 +243,19 @@
         </ul>
         <div>
           <div>
-            <p class="paragraph paragraph-2">
+            <p class="text-style-2 ">
               Обратная связь:
-              <a class="link-primary link-secondary link-thirdly" href="#">mail@htmlacademy.ru</a>
+              <a class="link link_secondary link_tertiary" href="#"
+                >mail@htmlacademy.ru</a
+              >
             </p>
           </div>
           <div>
-            <p class="paragraph paragraph-2">
+            <p class="text-style-2 ">
               Разработано —
-              <a class="link-primary link-secondary link-thirdly" href="#">htmlacademy.ru</a>
+              <a class="link link_secondary link_tertiary" href="#"
+                >htmlacademy.ru</a
+              >
             </p>
           </div>
         </div>
