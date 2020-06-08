@@ -100,6 +100,10 @@ a {
   list-style-type: none;
 }
 
+.button-unstyle {
+  border-style: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -241,7 +245,7 @@ img {
   color: black;
 }
 
-.header__search ::placeholder {
+.header__search::placeholder {
   font-family: var(--font-primary);
   font-style: normal;
   font-size: 13px;
@@ -327,6 +331,31 @@ img {
 
 .hidden {
   display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-form {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-size: 18px;
+  color: var(--font-color);
+}
+
+.modal-form_inside {
+  font-family: PT Sans;
+  font-style: normal;
+  font-size: 13px;
+  color: var(--old-price);
 }
 
 .text-style {
