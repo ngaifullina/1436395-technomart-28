@@ -129,10 +129,13 @@ img {
 
 .header__top-contols {
   background-color: var(--background-color-2);
+  display: flex;
 }
 
 .header__navigation {
   background-color: var(--background-color-3);
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer {
@@ -377,7 +380,7 @@ img {
   display: block;
 }
 
-.header__heading {
+.__heading {
   color: var(--header-heading-color);
   font-style: italic;
   font-weight: normal;
