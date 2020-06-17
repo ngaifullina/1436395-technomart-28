@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Техномарт</title>
@@ -8,140 +8,154 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <header class="header font-secondary">
-      <section class="header__top-contols">
-        <a href="index.html" class="logo">
-          <img src="img/svg-technomart/logo-technomart.svg" alt="Логотип" />
-        </a>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <div>
-            <label class="visually-hidden" for="search">Поиск</label>
-            <input
-              class="link link_secondary nav__link nav__link_secondary header__search"
-              type="text"
-              id="search"
-              placeholder="Поиск:"
-            />
+  <body class="page-body">
+    <div class="header-color">
+      <header class="font-secondary">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-footer-bg">
+              <section class="header__top-contols container">
+                <div class="header__top-contols_left">
+                <a href="index.html" class="logo">
+                  <img
+                    src="img/svg-technomart/logo-technomart.svg"
+                    alt="Логотип"
+                  />
+                </a>
+                <form
+                  action="https://echo.htmlacademy.ru/courses"
+                  method="post"
+                >
+                  <div>
+                    <label class="visually-hidden" for="search">Поиск</label>
+                    <input
+                      class="header__search"
+                      type="text"
+                      id="search"
+                      placeholder="Поиск:"
+                    />
+                  </div>
+                </div>
+                </form>
+                <div class="header__top-contols_right">
+                <a
+                  class="header__top-nav-element header__shopping-controls"
+                  href="blank.html"
+                >
+                  Закладки: 0
+                </a>
+                <a
+                  class="header__top-nav-element header__shopping-controls"
+                  href="blank.html"
+                >
+                  Корзина: 0
+                </a>
+                <a
+                  class="button button_secondary header__shopping-controls header__top-nav-element header__top-nav-element_narrow"
+                  href="blank.html"
+                >
+                  Оформить заказ
+                </a>
+              </div>
+              </section>
+            </div>
           </div>
-        </form>
-        <ul class="list-unstyle">
-          <li class="dark-link">
-            <a
-              class="link link_secondary nav__link nav__link_secondary"
-              href="blank.html"
-            >
-              Закладки: 0
-            </a>
-          </li>
-          <li class="dark-link">
-            <a
-              class="link link_secondary nav__link nav__link_secondary"
-              href="blank.html"
-            >
-              Корзина: 0
-            </a>
-          </li>
-        </ul>
-        <a
-          class="button button_secondary header__shopping-controls"
-          href="blank.html"
-        >
-          Оформить заказ
-        </a>
-      </section>
-
-      <section>
-        <h1 class="header__heading">
-          Интернет-магазин строительных материалов и инструментов для ремонта
-        </h1>
-        <div>
-          <a class="header__phone" href="tel:+78125550555">
-            +7 (812) 555-05-55
-          </a>
-          <p class="header__adress">
-            г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-          </p>
         </div>
-        <ul class="list-unstyle">
-          <li><a class="header__login" href="blank.html">Войти</a></li>
-          <li><a class="header__login" href="blank.html">Регистрация</a></li>
-        </ul>
-      </section>
-      <nav>
-        <ul class="list-unstyle header__navigation">
-          <li>
-            <a class="link link_secondary nav__link" href="blank.html">
-              Главная
-            </a>
-          </li>
-          <li>
-            <a class="link link_secondary nav__link" href="blank.html">
-              Компания
-            </a>
-          </li>
-          <li>
-            <a class="link link_secondary nav__link" href="catalog.html">
-              Каталог
-            </a>
-          </li>
-          <li>
-            <a class="link link_secondary nav__link" href="blank.html">
-              Новости
-            </a>
-          </li>
-          <li>
-            <a class="link link_secondary nav__link" href="blank.html">
-              Спецпредложения
-            </a>
-          </li>
-          <li>
-            <a class="link link_secondary nav__link" href="blank.html">
-              Доставка
-            </a>
-          </li>
-          <li>
-            <a class="link link_secondary nav__link" href="blank.html">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <section>
-        <h2 class="heading-2 heading-2_secondary">Компания «Техномарт»</h2>
-        <p>
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
-          ремонта и строительства не оставит равнодушными любителей сэкономить
-          на гастарбайтерах.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России!
-          Техномарт работает со многими транспортными компаниями:
-        </p>
-        <ul class="text-style-3 list-unstyle">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button" href="blank.html">Подробнее о компании</a>
-      </section>
+        <section class="row container">
+          <div class="col-12 header-main">
+            <h1 class="header__heading">
+              Интернет-магазин строительных материалов и инструментов для
+              ремонта
+            </h1>
+            <div>
+              <a class="header__phone" href="tel:+78125550555">
+                +7 (812) 555-05-55
+              </a>
+              <p class="header__adress">
+                г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+              </p>
+            </div>
+            <ul class="list-unstyle header__login-display">
+              <li><a class="header__login" href="blank.html">Войти</a></li>
+              <li>
+                <a class="header__login" href="blank.html">Регистрация</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <nav>
+          <ul class="list-unstyle header__navigation container">
+            <li>
+              <a class="link link_secondary nav__link" href="blank.html">
+                Главная
+              </a>
+            </li>
+            <li>
+              <a class="link link_secondary nav__link" href="blank.html">
+                Компания
+              </a>
+            </li>
+            <li>
+              <a class="link link_secondary nav__link" href="catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li>
+              <a class="link link_secondary nav__link" href="blank.html">
+                Новости
+              </a>
+            </li>
+            <li>
+              <a class="link link_secondary nav__link" href="blank.html">
+                Спецпредложения
+              </a>
+            </li>
+            <li>
+              <a class="link link_secondary nav__link" href="blank.html">
+                Доставка
+              </a>
+            </li>
+            <li>
+              <a class="link link_secondary nav__link" href="blank.html">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
-      <section>
-        <h2 class="heading-2 heading-2_secondary">Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a href="#">
-          <img src="img/map.png" width="300" height="158" alt="Карта" />
-        </a>
-        <a class="button" href="blank.html">Заблудились? Напишите нам!</a>
-        <!-- тут будет ссылка на модалку -->
-      </section>
-      <div>
-        <img src="img/map popup.png" />
-        <button type="button"></button>
-        <!-- карта скачалась вместе с кнопкой закрыть -->
+    <main class="main container">
+      <div class="row">
+        <div class="col-8">
+          <h2 class="heading-2 heading-2_secondary">Компания «Техномарт»</h2>
+          <p>
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
+            для ремонта и строительства не оставит равнодушными любителей
+            сэкономить на гастарбайтерах.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими транспортными компаниями:
+          </p>
+          <ul class="text-style-3 list-unstyle">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="blank.html">Подробнее о компании</a>
+        </div>
+
+        <div class="col-4">
+          <h2 class="heading-2 heading-2_secondary">Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <a href="#">
+            <img src="img/map.png" width="300" height="158" alt="Карта" />
+          </a>
+          <a class="button" href="blank.html">Заблудились? Напишите нам!</a>
+          <!-- тут будет ссылка на модалку -->
+        </div>
       </div>
     </main>
 
@@ -192,7 +206,7 @@
         </ul>
       </div>
 
-      <div class="footer_contacts footer-bottom">
+      <div class="header-footer-bg footer-bottom">
         <p class="text-style-2">
           ©2010—2019 Компания «Техномарт» Все права защищены
         </p>
@@ -223,6 +237,11 @@
     </footer>
 
     <div class="modal-form">
+      <div>
+        <img src="img/map popup.png" />
+        <button type="button"></button>
+        <!-- карта скачалась вместе с кнопкой закрыть -->
+      </div>
       <form action="https://echo.htmlacademy.ru" method="post">
         <button type="button"></button>
         <p>
