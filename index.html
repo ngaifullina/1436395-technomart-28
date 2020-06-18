@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
     <link href="css/fonts.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -11,59 +12,49 @@
   <body class="page-body">
     <div class="header-color">
       <header class="font-secondary">
-        <div class="row">
-          <div class="col-12">
-            <div class="header-footer-bg">
-              <section class="header__top-contols container">
-                <div class="header__top-contols_left">
-                <a href="index.html" class="logo">
-                  <img
-                    src="img/svg-technomart/logo-technomart.svg"
-                    alt="Логотип"
-                  />
-                </a>
-                <form
-                  action="https://echo.htmlacademy.ru/courses"
-                  method="post"
-                >
-                  <div>
-                    <label class="visually-hidden" for="search">Поиск</label>
-                    <input
-                      class="header__search"
-                      type="text"
-                      id="search"
-                      placeholder="Поиск:"
-                    />
-                  </div>
-                </div>
-                </form>
-                <div class="header__top-contols_right">
-                <a
-                  class="header__top-nav-element header__shopping-controls"
-                  href="blank.html"
-                >
-                  Закладки: 0
-                </a>
-                <a
-                  class="header__top-nav-element header__shopping-controls"
-                  href="blank.html"
-                >
-                  Корзина: 0
-                </a>
-                <a
-                  class="button button_secondary header__shopping-controls header__top-nav-element header__top-nav-element_narrow"
-                  href="blank.html"
-                >
-                  Оформить заказ
-                </a>
-              </div>
-              </section>
+        <div class="header-footer-bg">
+          <section class="header__top-contols container">
+            <div class="header__top-contols_left">
+              <a href="index.html" class="logo">
+                <img
+                  src="img/svg-technomart/logo-technomart.svg"
+                  alt="Логотип"
+                />
+              </a>
+              <form action="https://echo.htmlacademy.ru/courses" method="post">
+                <label class="visually-hidden" for="search">Поиск</label>
+                <input
+                  class="header__search"
+                  type="text"
+                  id="search"
+                  placeholder="Поиск:"
+                />
+              </form>
             </div>
-          </div>
+            <div class="header__top-contols_right">
+              <a
+                class="header__top-nav-element header__shopping-controls"
+                href="blank.html"
+              >
+                Закладки: 0
+              </a>
+              <a
+                class="header__top-nav-element header__shopping-controls"
+                href="blank.html"
+              >
+                Корзина: 0
+              </a>
+              <a
+                class="button button_secondary header__shopping-controls header__top-nav-element header__top-nav-element_narrow"
+                href="blank.html"
+              >
+                Оформить заказ
+              </a>
+            </div>
+          </section>
         </div>
-
-        <section class="row container">
-          <div class="col-12 header-main">
+        <section class="container">
+          <div class="header-content">
             <h1 class="header__heading">
               Интернет-магазин строительных материалов и инструментов для
               ремонта
@@ -126,111 +117,134 @@
       </header>
     </div>
 
-    <main class="main container">
-      <div class="row">
-        <div class="col-8">
-          <h2 class="heading-2 heading-2_secondary">Компания «Техномарт»</h2>
-          <p>
+    <main class="container">
+      <div class="row main">
+        <div class="col-6 main__first-column">
+          <h2 class="heading-2 heading-2_secondary">
+            Компания «Техномарт»
+          </h2>
+          <p class="text-style-4">
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
             для ремонта и строительства не оставит равнодушными любителей
             сэкономить на гастарбайтерах.
           </p>
           <p>
             Мы можем доставить ваш товар в самые отдаленные точки России!
+          </p>
+          <p>
             Техномарт работает со многими транспортными компаниями:
           </p>
-          <ul class="text-style-3 list-unstyle">
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+          <ul class="list-unstyle">
+            <li class="text-style-3">Деловые линии</li>
+            <li class="text-style-3">Автотрейдинг</li>
+            <li class="text-style-3">ЖелДорЭкспедиция</li>
           </ul>
           <a class="button" href="blank.html">Подробнее о компании</a>
         </div>
-
         <div class="col-4">
           <h2 class="heading-2 heading-2_secondary">Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href="#">
-            <img src="img/map.png" width="300" height="158" alt="Карта" />
+          <p class="text-style-4 main__second-column_text">
+            Вы можете забрать товар сами, заехав в наш офис:
+          </p>
+          <a class="main__img" href="#">
+            <img
+              class="wide"
+              src="img/map.png"
+              width="300"
+              height="158"
+              alt="Карта"
+            />
           </a>
-          <a class="button" href="blank.html">Заблудились? Напишите нам!</a>
+          <a class="button wide" href="blank.html"
+            >Заблудились? Напишите нам!</a
+          >
           <!-- тут будет ссылка на модалку -->
         </div>
       </div>
     </main>
 
     <footer class="footer font-secondary">
-      <div>
-        <a class="logo logo-footer" href="index.html">
-          <img src="img/svg-technomart/logo-technomart.svg" alt="Логотип" />
-        </a>
-        <ul class="list-unstyle">
-          <li>
-            <a href="blank.html" class="link link_secondary">Компания</a>
-          </li>
-          <li>
-            <a href="blank.html" class="link link_secondary">Новости</a>
-          </li>
-          <li>
-            <a href="catalog.html" class="link link_secondary">Каталог</a>
-          </li>
-          <li>
-            <a href="blank.html" class="link link_secondary">Доставка</a>
-          </li>
-          <li>
-            <a href="blank.html" class="link link_secondary">Контакты</a>
-          </li>
-        </ul>
+      <div class="row container">
+        <div class="col-5">
+          <a class="logo logo-footer" href="index.html">
+            <img src="img/svg-technomart/logo-technomart.svg" alt="Логотип" />
+          </a>
+        </div>
+        <div class="col-7">
+          <ul class="list-unstyle footer__first-row-links">
+            <li>
+              <a href="blank.html" class="link link_secondary">Компания</a>
+            </li>
+            <li>
+              <a href="blank.html" class="link link_secondary">Новости</a>
+            </li>
+            <li>
+              <a href="catalog.html" class="link link_secondary">Каталог</a>
+            </li>
+            <li>
+              <a href="blank.html" class="link link_secondary">Доставка</a>
+            </li>
+            <li>
+              <a href="blank.html" class="link link_secondary">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div>
-        <div>
+      <div class="row container footer__second-row">
+        <div class="col-5">
           <p class="text-style">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
           <a class="text-style" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
-        <ul class="list-unstyle">
-          <li>
-            <a href="blank.html" class="link">Материалы</a>
-          </li>
-          <li>
-            <a href="blank.html" class="link">Техника</a>
-          </li>
-          <li>
-            <a href="blank.html" class="link">Инструмент</a>
-          </li>
-          <li>
-            <a href="blank.html" class="link">Спецпредложения</a>
-          </li>
-        </ul>
+        <div class="col-7">
+          <ul class="list-unstyle footer__second-row-links">
+            <li>
+              <a href="blank.html" class="link">Материалы</a>
+            </li>
+            <li>
+              <a href="blank.html" class="link">Техника</a>
+            </li>
+            <li>
+              <a href="blank.html" class="link">Инструмент</a>
+            </li>
+            <li>
+              <a href="blank.html" class="link">Спецпредложения</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="header-footer-bg footer-bottom">
-        <p class="text-style-2">
-          ©2010—2019 Компания «Техномарт» Все права защищены
-        </p>
-        <ul class="list-unstyle">
-          <li><a href="#">Vkontakte</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-        <div>
-          <div>
+      <div class="header-footer-bg">
+        <div class="container">
+          <div class="footer-bottom">
             <p class="text-style-2">
-              Обратная связь:
-              <a class="link link_secondary link_tertiary" href="#">
-                mail@htmlacademy.ru
-              </a>
+              ©2010—2019 Компания «Техномарт» Все права защищены
             </p>
-          </div>
-          <div>
-            <p class="text-style-2">
-              Разработано —
-              <a class="link link_secondary link_tertiary" href="#">
-                htmlacademy.ru
-              </a>
-            </p>
+            <ul class="list-unstyle">
+              <li><a href="#">Vkontakte</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+            <div class="footer__feedback">
+              <div class="footer__feedback-elements">
+                <p class="text-style-2">
+                  Обратная связь:
+                </p>
+                <a class="link link_secondary link_tertiary" href="#">
+                  mail@htmlacademy.ru
+                </a>
+              </div>
+              <div class="footer__feedback-elements">
+                <p class="text-style-2">
+                  Разработано —
+                </p>
+                <a class="link link_secondary link_tertiary" href="#">
+                  htmlacademy.ru
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
