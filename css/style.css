@@ -75,6 +75,7 @@
   --panel-secondary-bg-color: #f9f5f0;
   --panel-filter: #f7f3ec;
   --logo-shadow: #B52933;
+  --header-nav-shadow: rgba(41, 52, 73, 1);
 }
 
 body {
@@ -157,7 +158,7 @@ img {
 
 .logo-footer {
   padding: 20px 41px;
-  margin-right: ;
+  line-height: 1;
 }
 
 .header-color {
@@ -175,10 +176,13 @@ img {
   display: flex;
 }
 
-.header__top-contols_left{
-  display: flex;
+.header__top-contols_left {
+  display: flex;  
 }
 
+.header__top-contols_left:last-child{
+  flex-grow: 1;
+}
 .header-footer-bg {
   background-color: var(--background-color-2);
 }
@@ -191,9 +195,11 @@ img {
   background-color: var(--background-color-3);
   display: flex;
   align-items: center;
+  width: 940px;
   margin: auto;
-  height: 60px;
   font-size: 18px;
+  box-shadow: 0 5px 0 var(--header-nav-shadow);
+
 }
 
 .header__phone {
@@ -277,9 +283,11 @@ img {
 }
 
 .nav__link {
+  display: block;
+  height: 60px;
   background-color: var(--nav-link-bg);
-  padding: 16px 24px 20px 27px;
-  display: inline-block;
+  padding: 0 30px;
+  line-height: 60px;
 }
 
 .nav__link:hover {
@@ -292,6 +300,21 @@ img {
   color: var(--nav-link-color-active);
 }
 
+.nav__link-element {
+  flex-grow: 1;
+}
+
+.header__search {
+  background-color: inherit;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.header__search-input {
+  width: 300px;
+}
+
 .header__search:active {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -302,10 +325,9 @@ img {
 }
 
 .header__search::placeholder {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   font-style: normal;
-  font-size: 13px;
-  line-height: 24px;
+  font-size: 18px;
   color: white;
   /* todo fix */
 }
@@ -615,14 +637,15 @@ img {
 }
 
 .footer__second-row {
+  display: flex;
   margin-top: 34px;
+
 }
 
 .footer__second-row-links {
   display: flex;
   justify-content: space-between;
-  margin-left: auto;
-  margin-bottom: 54px;
+  /* margin-bottom: 54px; */
 }
 
 .footer-bottom {
@@ -632,12 +655,20 @@ img {
   align-items: center;
 }
 
+/* .footer-bottom:first-child{
+  width: 227px;
+} */
+
 .footer__feedback {
   display: flex;
-
 }
 
 .footer__feedback-elements {
   display: flex;
   flex-direction: column;
 }
+
+.footer__feedback-elements:first-child {
+margin-right: 51px;
+}
+

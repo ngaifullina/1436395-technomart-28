@@ -24,7 +24,7 @@
               <form action="https://echo.htmlacademy.ru/courses" method="post">
                 <label class="visually-hidden" for="search">Поиск</label>
                 <input
-                  class="header__search"
+                  class="header__search header__search-input"
                   type="text"
                   id="search"
                   placeholder="Поиск:"
@@ -77,37 +77,37 @@
         </section>
         <nav>
           <ul class="list-unstyle header__navigation container">
-            <li>
+            <li class="nav__link-element">
               <a class="link link_secondary nav__link" href="blank.html">
                 Главная
               </a>
             </li>
-            <li>
+            <li class="nav__link-element">
               <a class="link link_secondary nav__link" href="blank.html">
                 Компания
               </a>
             </li>
-            <li>
+            <li class="nav__link-element">
               <a class="link link_secondary nav__link" href="catalog.html">
                 Каталог
               </a>
             </li>
-            <li>
+            <li class="nav__link-element">
               <a class="link link_secondary nav__link" href="blank.html">
                 Новости
               </a>
             </li>
-            <li>
+            <li class="nav__link-element">
               <a class="link link_secondary nav__link" href="blank.html">
                 Спецпредложения
               </a>
             </li>
-            <li>
+            <li class="nav__link-element">
               <a class="link link_secondary nav__link" href="blank.html">
                 Доставка
               </a>
             </li>
-            <li>
+            <li class="nav__link-element">
               <a class="link link_secondary nav__link" href="blank.html">
                 Контакты
               </a>
@@ -191,19 +191,19 @@
         </div>
       </div>
 
-      <div class="row container footer__second-row">
-        <div class="col-5">
+      <div class="container footer__second-row">
+        <div>
           <p class="text-style">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
           <a class="text-style" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
-        <div class="col-7">
+        <div>
           <ul class="list-unstyle footer__second-row-links">
             <li>
               <a href="blank.html" class="link">Материалы</a>
             </li>
-            <li>
+            <li >
               <a href="blank.html" class="link">Техника</a>
             </li>
             <li>
@@ -219,9 +219,14 @@
       <div class="header-footer-bg">
         <div class="container">
           <div class="footer-bottom">
-            <p class="text-style-2">
-              ©2010—2019 Компания «Техномарт» Все права защищены
-            </p>
+            <div class="text-style-2">
+              <p>
+                ©2010—2019 Компания «Техномарт»
+              </p>
+              <p>
+                Все права защищены
+              </p>
+            </div>
             <ul class="list-unstyle">
               <li><a href="#">Vkontakte</a></li>
               <li><a href="#">Facebook</a></li>
@@ -232,7 +237,7 @@
                 <p class="text-style-2">
                   Обратная связь:
                 </p>
-                <a class="link link_secondary link_tertiary" href="#">
+                <a class="link link_tertiary" href="#">
                   mail@htmlacademy.ru
                 </a>
               </div>
@@ -240,7 +245,7 @@
                 <p class="text-style-2">
                   Разработано —
                 </p>
-                <a class="link link_secondary link_tertiary" href="#">
+                <a class="link link_tertiary" href="#">
                   htmlacademy.ru
                 </a>
               </div>
