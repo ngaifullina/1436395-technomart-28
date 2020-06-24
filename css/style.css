@@ -555,7 +555,12 @@ img {
 .filter {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+}
+
+.filter__fieldset {
+  border-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter__power-system {
@@ -565,10 +570,14 @@ img {
 }
 
 .product {
+  list-style: none;
   border: 1px var(--light-grey) solid;
-  margin-left: 20px;
   margin-bottom: 18px;
-  display: inline-block;
+  width: 220px;
+  min-height: 318px;
+  /* display: flex;
+  width: 100%;
+  justify-content: column; */
 }
 
 .product__image {
@@ -708,4 +717,7 @@ img {
 .catalog {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  justify-content: space-between;
 }
+
