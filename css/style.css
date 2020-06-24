@@ -566,6 +566,8 @@ img {
 
 .product {
   border: 1px var(--light-grey) solid;
+  margin-left: 20px;
+  margin-bottom: 18px;
   display: inline-block;
 }
 
@@ -604,6 +606,7 @@ img {
 }
 
 .panel__filter-sort {
+  display: flex;
   background-color: var(--panel-filter);
 }
 .panel__filter-sort_secondary {
@@ -703,11 +706,6 @@ img {
 }
 
 .catalog {
-  display: grid;
-  width: 700px;
-  grid-template-columns: 100% 220px 220px 220px;
-  grid-template-rows: 100% 318px 318px 318px;
-  text-align: center;
-  row-gap: 20px;
-  column-gap: 18px;
+  display: flex;
+  flex-wrap: wrap;
 }
