@@ -553,6 +553,8 @@ img {
 }
 
 .filter {
+  display: flex;
+  flex-direction: column;
   margin-right: 20px;
 }
 
@@ -603,7 +605,6 @@ img {
 
 .panel__filter-sort {
   background-color: var(--panel-filter);
-  height: 38px;
 }
 .panel__filter-sort_secondary {
   display: flex;
