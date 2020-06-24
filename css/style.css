@@ -572,12 +572,10 @@ img {
 .product {
   list-style: none;
   border: 1px var(--light-grey) solid;
-  margin-bottom: 18px;
   width: 220px;
   min-height: 318px;
-  /* display: flex;
-  width: 100%;
-  justify-content: column; */
+  margin-bottom: 18px;
+  justify-content: center;
 }
 
 .product__image {
@@ -720,4 +718,3 @@ img {
   margin: 0;
   justify-content: space-between;
 }
-
