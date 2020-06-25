@@ -579,7 +579,7 @@ img {
 
 .product__image {
   display: block;
-  margin-bottom: 28px;
+  margin: 22px 43px 28px 33px;
 }
 
 .product__heading {
