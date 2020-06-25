@@ -575,11 +575,11 @@ img {
   width: 220px;
   min-height: 318px;
   margin-bottom: 18px;
-  justify-content: center;
 }
 
 .product__image {
   display: block;
+  margin-bottom: 28px;
 }
 
 .product__heading {
@@ -588,6 +588,7 @@ img {
   line-height: 20px;
   width: 185px;
   margin-left: 18px;
+  text-align: center;
 }
 
 .product__old-price {
@@ -597,11 +598,14 @@ img {
   color: var(--old-price);
   text-decoration-line: line-through;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .product__new-price {
   font-weight: bold;
   font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .panel {
