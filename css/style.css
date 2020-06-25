@@ -72,7 +72,6 @@
   --header-heading-color: var(--basic-red);
 
   --panel-bg-color: #f2f6f8;
-  --panel-secondary-bg-color: #f9f5f0;
   --panel-filter: #f7f3ec;
   --logo-shadow: #b52933;
   --header-nav-shadow: rgba(41, 52, 73, 1);
@@ -524,7 +523,10 @@ img {
   display: inline-block;
   line-height: 18px;
   text-transform: uppercase;
+  font-weight: normal;
   color: var(--heading-color-2);
+  margin: 0;
+  padding-left: 19px;
 }
 
 .heading-4_secondary {
@@ -555,6 +557,8 @@ img {
 .filter {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
+  width: 220px;
 }
 
 .filter__fieldset {
@@ -613,7 +617,7 @@ img {
 }
 
 .product__heading_without-old-price {
-margin-bottom: 39px;
+  margin-bottom: 39px;
 }
 
 .product__new-price {
@@ -629,18 +633,26 @@ margin-bottom: 39px;
   background-color: var(--panel-bg-color);
 }
 
-.panel_secondary {
-  background-color: var(--panel-secondary-bg-color);
+.panel-filter {
+  background-color: var(--panel-filter);
+  align-items: center;
+  height: 38px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 20px;
+  /* to do скруглить углы */
 }
 
 .panel__filter-sort {
   display: flex;
-  background-color: var(--panel-filter);
-}
-.panel__filter-sort_secondary {
-  display: flex;
+  justify-content: space-between;
 }
 
+.panel__filter-types {
+  display: flex;
+  justify-content: space-between;
+  width: 460px;
+}
 .page {
   height: 100%;
   padding: 0;
@@ -738,4 +750,29 @@ margin-bottom: 39px;
   flex-wrap: wrap;
   margin: 0;
   justify-content: space-between;
+  margin-top: 28px;
+}
+
+.catalog__bread-crumbs {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  margin-top: 21px;
+}
+
+.price {
+  height: 80px;
+  margin-bottom: 9px;
+}
+
+.price-gradation {
+  height: 38px;
+  width: 95px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.price-gradation ::placeholder {
+  align-items: center;
 }

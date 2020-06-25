@@ -129,7 +129,7 @@
     </div>
 
     <main class="container">
-      <ul class="list-unstyle heading-4">
+      <ul class="list-unstyle heading-4 catalog__bread-crumbs">
         <li>Каталог</li>
         <li>Инструмент</li>
         <li>Перфораторы</li>
@@ -138,86 +138,95 @@
         <h1 class="heading-2">Перфораторы</h1>
       </div>
       <div class="row">
-        <div class="col-3">
-          <div class="filter">
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <h4 class="heading-4">Фильтр:</h4>
-              <div>
-                <legend class="heading-filter">Цена:</legend>
+        <div class="filter">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <h4 class="panel-filter panel__filter-sort heading-4">Фильтр:</h4>
+            <div>
+              <legend class="heading-filter">Цена:</legend>
+              <div class="panel-filter price">
                 <div>
-                  <div>
-                    <div></div>
-                    <div></div>
-                  </div>
+                  <div></div>
+                  <div></div>
                 </div>
-                <input type="text" />
-                <span>—</span>
-                <input type="text" />
               </div>
-              <fieldset class="filter__fieldset">
-                <legend class="heading-filter">Производители:</legend>
-                <ul class="list-unstyle filter">
-                  <li>
-                    <label>
-                      <input type="checkbox" name="Bosch" checked />Bosch
-                    </label>
-                  </li>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="Interscol" />Интерскол
-                    </label>
-                  </li>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="Makita" checked />Макита
-                    </label>
-                  </li>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="Dewalt" />Dewalt
-                    </label>
-                  </li>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="Hitachi" />Hitachi
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="filter__fieldset">
-                <legend class="heading-filter">Питание:</legend>
-                <ul class="list-unstyle filter__power-system">
-                  <li>
-                    <label>
-                      <input
-                        type="radio"
-                        name="type"
-                        value="Rechargeable"
-                        checked
-                      />
-                      Аккумуляторные
-                    </label>
-                  </li>
-                  <li>
-                    <label>
-                      <input type="radio" name="type" value="Network" />Сетевые
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <button class="heading-4" type="submit">Показать</button>
-            </form>
-          </div>
+              <label for="low-price">
+                <input
+                  class="panel-filter price-gradation"
+                  type="text"
+                  id="low-price"
+                  placeholder="0"
+                />
+              </label>
+              <span>—</span>
+              <input
+                class="panel-filter price-gradation"
+                type="text"
+                placeholder="30000"
+              />
+            </div>
+            <fieldset class="filter__fieldset">
+              <legend class="heading-filter">Производители:</legend>
+              <ul class="list-unstyle filter">
+                <li>
+                  <label>
+                    <input type="checkbox" name="Bosch" checked />Bosch
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="Interscol" />Интерскол
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="Makita" checked />Макита
+                  </label>
+                </li>
+                <li>
+                  <label> <input type="checkbox" name="Dewalt" />Dewalt </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="Hitachi" />Hitachi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter__fieldset">
+              <legend class="heading-filter">Питание:</legend>
+              <ul class="list-unstyle filter__power-system">
+                <li>
+                  <label>
+                    <input
+                      type="radio"
+                      name="type"
+                      value="Rechargeable"
+                      checked
+                    />
+                    Аккумуляторные
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="type" value="Network" />Сетевые
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="heading-4" type="submit">Показать</button>
+          </form>
         </div>
         <div class="col-9">
-          <div class="panel__filter-sort">
+          <div class="panel-filter panel__filter-sort">
             <h4 class="heading-4">Сортировка</h4>
             <ul class="list-unstyle">
-              <li class="heading-4 heading-4_secondary">По цене</li>
-              <li class="heading-4 heading-4_secondary">По типу</li>
-              <li class="heading-4 heading-4_secondary">По функционалу</li>
-              <button aria-label="По возрастанию"></button>
-              <button aria-label="По убыванию"></button>
+              <div class="panel__filter-types">
+                <li class="heading-4 heading-4_secondary">По цене</li>
+                <li class="heading-4 heading-4_secondary">По типу</li>
+                <li class="heading-4 heading-4_secondary">По функционалу</li>
+                <button aria-label="По возрастанию"></button>
+                <button aria-label="По убыванию"></button>
+              </div>
             </ul>
           </div>
           <section>
