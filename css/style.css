@@ -579,7 +579,16 @@ img {
 
 .product__image {
   display: block;
-  margin: 22px 43px 28px 33px;
+  margin-left: 33px;
+  margin-top: 22px;
+  height: 128px;
+  width: 144px;
+}
+
+.product__image_without-priсe {
+  width: 127px;
+  height: 112px;
+  margin-top: 29px;
 }
 
 .product__heading {
@@ -587,8 +596,8 @@ img {
   font-size: 18px;
   line-height: 20px;
   width: 185px;
-  margin-left: 18px;
   text-align: center;
+  margin: 28px 18px 7px;
 }
 
 .product__old-price {
@@ -599,10 +608,12 @@ img {
   text-decoration-line: line-through;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-bottom: 13px;
 }
 
-.product__without-old-price {
-margin-top: 18px;
+.product__heading_without-old-price {
+margin-bottom: 39px;
 }
 
 .product__new-price {
