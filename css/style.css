@@ -601,11 +601,17 @@ img {
   text-align: center;
 }
 
+.product__without-old-price {
+margin-top: 18px;
+}
+
 .product__new-price {
+  width: 141px;
   font-weight: bold;
   font-size: 17px;
-  text-align: center;
-  vertical-align: middle;
+  margin-left: 45px;
+  margin-right: 34px;
+  padding: 10px 44px 10px 32px;
 }
 
 .panel {
