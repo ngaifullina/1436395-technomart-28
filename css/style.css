@@ -147,9 +147,10 @@ img {
 /* styles  */
 .logo {
   background-color: var(--basic-red);
-  padding: 12px 57px 13px 55px;
+  padding: 10px 56px;
   display: block;
   box-shadow: 0 5px 0 var(--logo-shadow);
+
 }
 
 .logo:active {
@@ -160,8 +161,8 @@ img {
   padding: 20px 41px;
   line-height: 1;
   margin-right: auto;
-  margin-bottom: 22px;
-  box-sizing: border-box;
+  margin-bottom: 27px;
+  height: 100%;
 }
 
 .header-color {
@@ -173,6 +174,7 @@ img {
   display: flex;
   padding: 0;
   justify-content: space-between;
+  height: 42px;
 }
 
 .header__top-contols_right {
