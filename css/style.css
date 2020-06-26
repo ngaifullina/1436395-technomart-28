@@ -259,7 +259,7 @@ img {
   display: flex;
   width: 210px;
   justify-content: space-between;
-  /* margin-left: 105px; */
+  margin-left: 61px;
 }
 
 .link {
