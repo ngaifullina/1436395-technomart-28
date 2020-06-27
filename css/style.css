@@ -75,6 +75,7 @@
   --panel-filter: #f7f3ec;
   --logo-shadow: #b52933;
   --header-nav-shadow: rgba(41, 52, 73, 1);
+  --social-button-bg: #212a3a;
 }
 
 body {
@@ -150,7 +151,6 @@ img {
   padding: 10px 56px;
   display: block;
   box-shadow: 0 5px 0 var(--logo-shadow);
-
 }
 
 .logo:active {
@@ -322,14 +322,44 @@ img {
 }
 
 .header__search {
+  position: relative;
   background-color: inherit;
   border: none;
-  height: 100%;
-  width: 100%;
+  line-height: 1;
 }
 
-.header__search-input {
+.header__search input {
+  font-size: 18px;
+  font-family: var(--font-secondary);
+  font-style: normal;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 43px;
+  background-color: inherit;
+  border: none;
   width: 271px;
+  box-sizing: border-box;
+  height: 42px;
+}
+
+.header__search input:focus {
+  background-color: var(--white);
+  border: none;
+  outline: 0;
+}
+.header__search input::placeholder {
+  color: white;
+}
+
+.header__search::before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url("img/svg-technomart/icon-search.svg");
+  background-repeat: no-repeat;
+  /* background-position: 0 0; */
+  background-color: var(--basic-white);
 }
 
 .header__search:active {
@@ -414,6 +444,14 @@ img {
 
 .header__saved {
   padding-right: 38px;
+  padding-left: 43px;
+  position: relative;
+}
+
+.header__saved::before {
+  content: "";
+  position: absolute;
+  background-image: url("img/svg-technomart/icon-bookmark.svg");
 }
 
 .header__shopping-controls:active {
@@ -443,15 +481,40 @@ img {
   display: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--social-button-bg);
+  border-radius: 100%;
+}
+
+.social-button:hover,
+.social-button:active {
+  background-color: var(--basic-red);
 }
 
 .modal-form {
