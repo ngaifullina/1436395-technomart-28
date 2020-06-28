@@ -340,6 +340,7 @@ img {
   width: 271px;
   box-sizing: border-box;
   height: 42px;
+  position: relative;
 }
 
 .header__search input:focus {
@@ -347,8 +348,28 @@ img {
   border: none;
   outline: 0;
 }
+
 .header__search input::placeholder {
   color: white;
+}
+
+.header__input {
+  display: inline-block;
+  position: absolute;
+}
+
+.header__input:focus::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/svg-technomart/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 12px;
+  left: 17px;
+  color: var(--basic-red);
+  pointer-events: none;
+  /* не работает */
 }
 
 .header__search::before {
@@ -356,10 +377,16 @@ img {
   content: "";
   width: 17px;
   height: 17px;
-  background-image: url("img/svg-technomart/icon-search.svg");
+  background-image: url("../img/svg-technomart/icon-search.svg");
   background-repeat: no-repeat;
-  /* background-position: 0 0; */
-  background-color: var(--basic-white);
+  background-position: 0 0;
+  top: 12px;
+  left: 17px;
+  opacity: 30%;
+}
+
+.header__search:hover::before {
+  opacity: 1;
 }
 
 .header__search:active {
@@ -442,16 +469,40 @@ img {
   text-transform: none;
 }
 
+.header__shopping-controls:nth-child(2){
+  position: relative;
+}
+
+.header__shopping-controls:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/svg-technomart/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 15px;
+  height: 15px;
+  left: 8px;
+  padding-top: 13px;
+}
+
 .header__saved {
-  padding-right: 38px;
-  padding-left: 43px;
+  padding-right: 50px;
+  padding-left: 23px;
   position: relative;
 }
 
 .header__saved::before {
   content: "";
   position: absolute;
-  background-image: url("img/svg-technomart/icon-bookmark.svg");
+  background-image: url("../img/svg-technomart/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 14px;
+  height: 16px;
+  left: 9px;
+  padding-top: 9px;
+  padding-right: 9px;
+  /* некорректно */
 }
 
 .header__shopping-controls:active {
