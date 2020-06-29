@@ -208,15 +208,29 @@ img {
 }
 
 .header__phone {
+  position: relative;
   display: block;
   color: var(--basic-red);
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
-  padding: 7px 45px 8px 44px;
+  padding: 7px 45px 8px 74px;
   border: solid var(--white) 3px;
   height: 45px;
   box-sizing: border-box;
+}
+
+.header__phone::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/svg-technomart/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 19px;
+  height: 19px;
+  left: 39px;
+  top: 13px;
+  /* повернуть значок */
 }
 
 .header__login {
@@ -225,8 +239,25 @@ img {
   background-color: var(--white);
   font-size: 21px;
   line-height: 21px;
-  padding: 12px 27px 12px 19px;
+  padding: 12px 24px;
   margin-left: 10px;
+}
+.header__login_enter {
+  padding-left: 45px;
+  padding-right: 27px;
+  position: relative;
+}
+
+.header__login_enter::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 17px;
+  left: 19px;
+  top: 14px;
+  background-image: url(../img/svg-technomart/icon-login.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .header__login:hover {
@@ -234,12 +265,36 @@ img {
 }
 
 .header__login_name {
-  width: 299px;
+  padding: 12px 57px;
   text-align: center;
+  position: relative;
 }
 
 .header__login_name:hover {
   color: var(--black);
+}
+
+.header__login_name::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/svg-technomart/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 15px;
+}
+
+.header__login_name::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/svg-technomart/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  right: 17px;
+  top: 14px;
 }
 
 .header__login:active {
@@ -471,6 +526,7 @@ img {
 
 .header__shopping-controls:nth-child(2){
   position: relative;
+  padding-left: 23px;
 }
 
 .header__shopping-controls:nth-child(2)::before {
@@ -481,8 +537,9 @@ img {
   background-position: 0 0;
   width: 15px;
   height: 15px;
-  left: 8px;
-  padding-top: 13px;
+  left: 1px;
+  top: 13px;
+  opacity: 0.3;
 }
 
 .header__saved {
@@ -499,10 +556,20 @@ img {
   background-position: 0 0;
   width: 14px;
   height: 16px;
-  left: 9px;
-  padding-top: 9px;
-  padding-right: 9px;
-  /* некорректно */
+  left: 1px;
+  top: 13px;
+  opacity: 0.3;
+  /* разобраться с 1 */
+}
+
+.header__saved:hover::before,
+.header__shopping-controls:nth-child(2):hover::before {
+  opacity: 1;
+}
+
+.header__saved:active::before,
+.header__shopping-controls:nth-child(2):active::before {
+  opacity: 0.3;
 }
 
 .header__shopping-controls:active {
