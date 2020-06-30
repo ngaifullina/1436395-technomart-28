@@ -147,8 +147,10 @@ img {
 
 /* styles  */
 .logo {
+  width: 108px;
+  height: 18px;
   background-color: var(--basic-red);
-  padding: 10px 56px;
+  padding: 12px 57px 12px 55px;
   display: block;
   box-shadow: 0 5px 0 var(--logo-shadow);
 }
@@ -209,12 +211,12 @@ img {
 
 .header__phone {
   position: relative;
-  display: block;
+  display: inline-block;
   color: var(--basic-red);
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
-  padding: 7px 45px 8px 74px;
+  padding: 4px 42px 5px 71px;
   border: solid var(--white) 3px;
   height: 45px;
   box-sizing: border-box;
@@ -228,8 +230,8 @@ img {
   background-position: 0 0;
   width: 19px;
   height: 19px;
-  left: 39px;
-  top: 13px;
+  left: 36px;
+  top: 10px;
   /* повернуть значок */
 }
 
@@ -240,12 +242,21 @@ img {
   font-size: 21px;
   line-height: 21px;
   padding: 12px 24px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 .header__login_enter {
   padding-left: 45px;
   padding-right: 27px;
   position: relative;
+  /* margin-left: 65px; */
+  /* display: inline-block; */
+}
+
+.flex {
+  display: inline-flex;
+}
+.header__login_registration {
+  display: inline-flex;
 }
 
 .header__login_enter::before {
@@ -270,7 +281,7 @@ img {
   position: relative;
 }
 
-.header__login_name:hover {
+._name:hover {
   color: var(--black);
 }
 
@@ -306,10 +317,6 @@ img {
   line-height: 18px;
   color: var(--blue);
   background-color: inherit;
-}
-
-.header__login-display {
-  display: flex;
 }
 
 .header__login-personal {
@@ -472,7 +479,10 @@ img {
 .header__adress {
   font-size: 14px;
   line-height: 24px;
-  margin-top: 11px;
+  margin: 0;
+  padding: 0;
+  margin-left: 9px;
+  padding-top: 1px;
 }
 
 .wide {
@@ -517,16 +527,20 @@ img {
 }
 
 .header__shopping-controls {
-  display: flex;
   font-size: 18px;
   line-height: 24px;
   padding: 9px 16px;
   text-transform: none;
 }
 
-.header__shopping-controls:nth-child(2){
+.header__shopping-controls:nth-child(3) {
+  padding-left: 18px;
+}
+
+.header__shopping-controls:nth-child(2) {
   position: relative;
-  padding-left: 23px;
+  padding-left: 35px;
+  padding-right: 26px;
 }
 
 .header__shopping-controls:nth-child(2)::before {
@@ -537,14 +551,14 @@ img {
   background-position: 0 0;
   width: 15px;
   height: 15px;
-  left: 1px;
+  left: 12px;
   top: 13px;
   opacity: 0.3;
 }
 
 .header__saved {
   padding-right: 50px;
-  padding-left: 23px;
+  padding-left: 43px;
   position: relative;
 }
 
@@ -556,7 +570,7 @@ img {
   background-position: 0 0;
   width: 14px;
   height: 16px;
-  left: 1px;
+  left: 20px;
   top: 13px;
   opacity: 0.3;
   /* разобраться с 1 */
@@ -664,32 +678,50 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
-.text-style-3 {
+.transport-company {
   font-size: 18px;
   line-height: 24px;
   margin-top: 0;
   margin-bottom: 12px;
-  margin-left: 12px;
+  padding-left: 37px;
+  position: relative;
 }
 
-.text-style-3:last-child {
+.transport-company:last-child {
   margin-bottom: 20px;
+}
+
+.transport-company::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: var(--basic-red);
+  left: 0;
+  bottom: 8px;
 }
 
 .text-style-4,
 .main__img {
   margin-bottom: 25px;
 }
+.header__phone-adress {
+  display: inline-block;
+  /* margin-top: 46px; */
+  /* width: 270px; */
+  /* margin-right: 69px; */
+  /* margin-bottom: 40px; */
+}
 
 .header__heading {
-  display: block;
+  display: inline-block;
   width: 197px;
   color: var(--header-heading-color);
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
-  margin-left: 31px;
+  margin: 42px 93px 44.5px 29px;
 }
 
 .heading-2 {
@@ -870,6 +902,10 @@ input[type="radio"].visually-hidden {
   margin-top: 41px;
   margin-bottom: 45px;
   justify-content: space-between;
+}
+
+.header-content:first-child {
+  margin-top: 35.7px;
 }
 
 .main {
