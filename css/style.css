@@ -127,14 +127,14 @@ img {
 }
 
 .col-6 {
-  width: 50%;
+  width: 460px;
 }
 
 .col-5 {
   width: 41.66666%;
 }
 .col-4 {
-  width: 33.33333%;
+  width: 300px;
 }
 
 .col-3 {
@@ -202,9 +202,11 @@ img {
 .header__navigation {
   background-color: var(--background-color-3);
   display: flex;
-  align-items: center;
   width: 940px;
-  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
   font-size: 18px;
   box-shadow: 0 5px 0 var(--header-nav-shadow);
 }
@@ -248,15 +250,7 @@ img {
   padding-left: 45px;
   padding-right: 27px;
   position: relative;
-  /* margin-left: 65px; */
-  /* display: inline-block; */
-}
-
-.flex {
-  display: inline-flex;
-}
-.header__login_registration {
-  display: inline-flex;
+  margin-right: 10px;
 }
 
 .header__login_enter::before {
@@ -313,6 +307,7 @@ img {
 }
 
 .header__login_catalog {
+  display: block;
   font-size: 16px;
   line-height: 18px;
   color: var(--blue);
@@ -323,7 +318,25 @@ img {
   display: flex;
   width: 210px;
   justify-content: space-between;
-  margin-left: 61px;
+  margin-left: 43px;
+  margin-top: 7px;
+  position: relative;
+}
+
+.header__login-personal::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: var(--blue);
+  border-radius: 50%;
+  left: 90px;
+  top: 8px;
+}
+
+.header__enter-registration {
+  display: flex;
+  margin-left: auto;
 }
 
 .link {
@@ -363,10 +376,18 @@ img {
 
 .nav__link {
   display: block;
-  height: 60px;
+  height: 55px;
   background-color: var(--nav-link-bg);
-  padding: 0 30px;
+  /* padding: 0 30px; */
   line-height: 60px;
+}
+
+nav ul li:first-child {
+  padding-left: 52px;
+}
+
+nav ul li:last-child {
+  padding-right: 47px;
 }
 
 .nav__link:hover {
@@ -377,10 +398,6 @@ img {
 .nav__link:active {
   background-color: var(--nav-link-bg-active);
   color: var(--nav-link-color-active);
-}
-
-.nav__link-element {
-  flex-grow: 1;
 }
 
 .header__search {
@@ -481,12 +498,9 @@ img {
   line-height: 24px;
   margin: 0;
   padding: 0;
-  margin-left: 9px;
-  padding-top: 1px;
-}
-
-.wide {
-  width: 100%;
+  margin-left: 10px;
+  padding-top: 4px;
+  color: var(--blue);
 }
 
 .button {
@@ -679,16 +693,14 @@ input[type="radio"].visually-hidden {
 }
 
 .transport-company {
+  font-family: var(--font-secondary);
+  font-style: normal;
   font-size: 18px;
   line-height: 24px;
   margin-top: 0;
   margin-bottom: 12px;
   padding-left: 37px;
   position: relative;
-}
-
-.transport-company:last-child {
-  margin-bottom: 20px;
 }
 
 .transport-company::before {
@@ -698,30 +710,15 @@ input[type="radio"].visually-hidden {
   height: 2px;
   background: var(--basic-red);
   left: 0;
-  bottom: 8px;
+  top: 13px;
 }
 
-.text-style-4,
-.main__img {
-  margin-bottom: 25px;
-}
-.header__phone-adress {
-  display: inline-block;
-  /* margin-top: 46px; */
-  /* width: 270px; */
-  /* margin-right: 69px; */
-  /* margin-bottom: 40px; */
+.transport-company:last-child {
+  margin-bottom: 20px;
 }
 
-.header__heading {
-  display: inline-block;
-  width: 197px;
-  color: var(--header-heading-color);
-  font-style: italic;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 23px;
-  margin: 42px 93px 44.5px 29px;
+.text-style-4 {
+  margin-bottom: 26px;
 }
 
 .heading-2 {
@@ -757,6 +754,7 @@ input[type="radio"].visually-hidden {
   border: 1px;
   border-bottom-style: dotted;
   border-color: var(--basic-red);
+  padding-left: 0;
 }
 
 .heading-4_secondary:hover {
@@ -882,6 +880,7 @@ input[type="radio"].visually-hidden {
 .panel__filter-types {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 460px;
 }
 .page {
@@ -899,13 +898,28 @@ input[type="radio"].visually-hidden {
 
 .header-content {
   display: flex;
-  margin-top: 41px;
-  margin-bottom: 45px;
-  justify-content: space-between;
+  margin-top: 46px;
 }
 
-.header-content:first-child {
-  margin-top: 35.7px;
+.header-content-right {
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+}
+
+.header__heading {
+  display: inline-block;
+  width: 197px;
+  color: var(--header-heading-color);
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  margin: -2px 93px 44.5px 29px;
+}
+
+.header__phone-adress {
+  display: block;
 }
 
 .main {
@@ -918,6 +932,11 @@ input[type="radio"].visually-hidden {
 
 .main__second-column_text {
   width: 180px;
+  /* margin-bottom: 32px; */
+}
+
+.wide {
+  width: 100%;
 }
 
 .main__img {
@@ -990,9 +1009,70 @@ input[type="radio"].visually-hidden {
 
 .catalog__bread-crumbs {
   display: flex;
-  width: 50%;
-  justify-content: space-around;
-  margin-top: 21px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  padding: 0;
+  width: 463px;
+  /* не смогла выровнять по вертикали */
+}
+
+.catalog__bread-crumbs_element {
+  padding-right: 41px;
+  position: relative;
+}
+
+.catalog__bread-crumbs_element:first-of-type {
+  padding-right: 55px;
+}
+
+.catalog__bread-crumbs_element:nth-of-type(1)::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/svg-technomart/icon-home.svg");
+  width: 14px;
+  height: 12px;
+  left: 0;
+  top: 3px;
+}
+
+.catalog__bread-crumbs_element:nth-of-type(2)::before,
+.catalog__bread-crumbs_element:nth-of-type(3)::before,
+.catalog__bread-crumbs_element:nth-of-type(4)::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/svg-technomart/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 8px;
+  height: 12px;
+  left: -26px;
+  top: 3px;
+}
+
+.button-sort {
+  /* border: none; */
+  position: relative;
+}
+
+.button-sort:first-of-type::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/svg-technomart/icon-down-dir.svg");
+  background-color: var(--basic-red);
+  width: 11px;
+  height: 10px;
+  transform: rotate(180deg);
+  /* превратился в квадрат при смене цвета */
+}
+
+.button-sort:last-of-type::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/svg-technomart/icon-down-dir.svg");
+  background-color: var(--basic-greylight);
+  width: 11px;
+  height: 10px;
 }
 
 .price {
@@ -1010,4 +1090,14 @@ input[type="radio"].visually-hidden {
 
 .price-gradation ::placeholder {
   align-items: center;
+}
+
+.transport-company-text {
+  padding-top: 1px;
+  padding-bottom: 2px;
+}
+
+.about-company {
+  padding-left: 40px;
+  padding-right: 40px;
 }
