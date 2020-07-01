@@ -146,7 +146,7 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <h4 class="panel-filter panel__filter-sort heading-4">Фильтр:</h4>
             <div>
-              <legend class="heading-filter">Цена:</legend>
+              <legend class="heading-filter heading-filter_price">Цена:</legend>
               <div class="panel-filter price">
                 <div>
                   <div></div>
@@ -168,40 +168,68 @@
                 placeholder="30000"
               />
             </div>
+
             <fieldset class="filter__fieldset">
-              <legend class="heading-filter">Производители:</legend>
-              <ul class="list-unstyle filter">
-                <li>
-                  <label>
-                    <input type="checkbox" name="Bosch" checked />Bosch
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="Interscol" />Интерскол
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="Makita" checked />Макита
-                  </label>
-                </li>
-                <li>
-                  <label> <input type="checkbox" name="Dewalt" />Dewalt </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="Hitachi" />Hitachi
-                  </label>
-                </li>
-              </ul>
+              <div>
+                <legend class="heading-filter">Производители:</legend>
+                <ul class="list-unstyle filter">
+                  <li class="label">
+                    <label>
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="Bosch"
+                        checked
+                      />Bosch
+                    </label>
+                  </li>
+                  <li class="label">
+                    <label>
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="Interscol"
+                      />Интерскол
+                    </label>
+                  </li>
+                  <li class="label">
+                    <label>
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="Makita"
+                        checked
+                      />Макита
+                    </label>
+                  </li>
+                  <li class="label">
+                    <label>
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="Dewalt"
+                      />Dewalt
+                    </label>
+                  </li>
+                  <li class="label">
+                    <label>
+                      <input
+                        class="visually-hidden"
+                        type="checkbox"
+                        name="Hitachi"
+                      />Hitachi
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
             <fieldset class="filter__fieldset">
               <legend class="heading-filter">Питание:</legend>
               <ul class="list-unstyle filter__power-system">
-                <li>
+                <li class="label">
                   <label>
                     <input
+                      class="visually-hidden"
                       type="radio"
                       name="type"
                       value="Rechargeable"
@@ -210,13 +238,19 @@
                     Аккумуляторные
                   </label>
                 </li>
-                <li>
+                <li class="label">
                   <label>
-                    <input type="radio" name="type" value="Network" />Сетевые
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="type"
+                      value="Network"
+                    />Сетевые
                   </label>
                 </li>
               </ul>
             </fieldset>
+
             <button class="heading-4 filter__button-show" type="submit">
               Показать
             </button>
@@ -237,7 +271,6 @@
                   <span class="visually-hidden">По убыванию</span>
                 </button>
               </div>
-              
             </ul>
           </div>
           <section>
