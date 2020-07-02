@@ -76,6 +76,7 @@
   --logo-shadow: #b52933;
   --header-nav-shadow: rgba(41, 52, 73, 1);
   --social-button-bg: #212a3a;
+  --button-on-img-border: #367315;
 }
 
 body {
@@ -602,25 +603,6 @@ nav ul li:last-child {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.button_tertiary {
-  color: var(--button-tertiary-color);
-  outline: var(--button-tertiary-border) solid 3px;
-  background-color: var(--white);
-  /* todo скруглить углы */
-}
-
-.button_tertiary:hover {
-  outline-color: var(--button-tertiary-border-hover);
-  background-color: inherit;
-  color: inherit;
-}
-
-.button_tertiary:active {
-  outline-color: var(--button-tertiary-border-hover);
-  opacity: 0.5;
-  color: inherit;
-}
-
 .hidden {
   display: none;
 }
@@ -834,15 +816,20 @@ ul.list-unstyle.filter {
   width: 220px;
   min-height: 318px;
   margin-bottom: 18px;
+  position: relative;
+  overflow: hidden;
 }
 
 .product:hover {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+.product:hover .product__image {
+  visibility: hidden;
+}
+
 .new {
   display: flex;
-  overflow: hidden;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -856,13 +843,12 @@ ul.list-unstyle.filter {
   width: 100px;
   height: 30px;
   transform: rotate(45deg);
-  left: 114px;
-  top: -14px;
+  top: 6px;
+  right: -25px;
 }
 
 .product__image {
   display: block;
-  position: relative;
   margin-left: 33px;
   margin-top: 22px;
   height: 128px;
@@ -878,9 +864,44 @@ ul.list-unstyle.filter {
   display: flex;
   flex-direction: column;
   position: absolute;
-  z-index: 2;
   background-position: 0 0;
-  top: 0;
+  left: 41px;
+  top: 38px;
+  visibility: hidden;
+}
+
+.product:hover .button-on-img,
+.product .new {
+  visibility: visible;
+}
+
+.button_tertiary {
+  color: var(--button-tertiary-color);
+  background-color: var(--white);
+  margin-top: 10px;
+  border: 3px solid #63a63e;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 8px 31px 7px 30px;
+  display: inline-block;
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.button_tertiary:hover {
+  border-color: var(--button-tertiary-border-hover);
+  background-color: inherit;
+  color: inherit;
+}
+
+.button_tertiary:active {
+  border-color: var(--button-tertiary-border-hover);
+  opacity: 0.5;
+  color: inherit;
 }
 
 .product__image_without-priсe {
@@ -1169,4 +1190,29 @@ ul.list-unstyle.filter {
 
 .supply {
   margin-bottom: 23px;
+}
+
+.button-on-img .button_secondary {
+  box-shadow: inset 0px -3px 0px var(--button-on-img-border);
+  padding: 10px 12px 10px 25px;
+  border-radius: 2px;
+  position: relative;
+  color: var(--button-text-color);
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 135px;
+}
+
+.button-on-img .button_secondary::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/svg-technomart/icon-cart.svg");
+  opacity: 0.3;
+  left: 30px;
 }
