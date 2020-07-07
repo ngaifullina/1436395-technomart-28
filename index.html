@@ -333,18 +333,19 @@
       <div class="modal-map__map"></div>
     </div>
 
-    <div class="modal modal-form">
+    <!-- modal-feedback-form -->
+    <div class="modal">
       <button type="button" class="modal__close"></button>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="modal-form__content">
-          <div class="modal-form__contacts-wrapper">
+        <div class="modal-feedback-form__content">
+          <div class="modal-feedback-form__contacts-wrapper">
             <div class="row">
               <div class="col-6">
-                <label class="modal-form__label" for="checkout_name">
+                <label class="modal-feedback-form__label" for="checkout_name">
                   Ваше имя:
                 </label>
                 <input
-                  class="input input_wide modal-form__text-input"
+                  class="input input_wide modal-feedback-form__text-input"
                   id="checkout_name"
                   type="text"
                   name="name"
@@ -353,11 +354,11 @@
                 />
               </div>
               <div class="col-6">
-                <label class="modal-form__label" for="checkout_email">
+                <label class="modal-feedback-form__label" for="checkout_email">
                   Ваш e-mail:
                 </label>
                 <input
-                  class="input input_wide modal-form__text-input"
+                  class="input input_wide modal-feedback-form__text-input"
                   id="checkout_email"
                   type="email"
                   name="email"
@@ -368,12 +369,12 @@
             </div>
           </div>
 
-          <div class="modal-form__message-wrapper">
-            <label class="modal-form__label" for="checkout_message">
+          <div class="modal-feedback-form__message-wrapper">
+            <label class="modal-feedback-form__label" for="checkout_message">
               Текст письма:
             </label>
             <textarea
-              class="textarea textarea_wide modal-form__text-input modal-form__text-input_textarea"
+              class="textarea textarea_wide modal-feedback-form__text-input modal-feedback-form__text-input_textarea"
               id="checkout_message"
               name="message"
               placeholder="В свободной форме"
@@ -382,8 +383,8 @@
           </div>
         </div>
 
-        <div class="modal-form__send-bg">
-          <div class="modal-form__content">
+        <div class="modal__actions">
+          <div class="modal-feedback-form__content">
             <button class="button button_wide" href="blank.html">
               Отправить
             </button>

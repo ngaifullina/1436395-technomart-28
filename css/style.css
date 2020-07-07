@@ -77,6 +77,9 @@
   --header-nav-shadow: rgba(41, 52, 73, 1);
   --social-button-bg: #212a3a;
   --product__button-on-img-border: #367315;
+
+  --modal-bg: var(--white);
+  --modal-actions-bg:#F4F4F4;
 }
 
 body {
@@ -399,9 +402,10 @@ img {
 }
 
 .modal {
+  width: 620px;
   position: relative;
   border-top: 7px solid var(--basic-red);
-  background: var(--white);
+  background: var(--modal-bg);
 }
 
 .modal__close {
@@ -412,11 +416,19 @@ img {
   height: 21px;
   position: absolute;
   right: 11px;
-  top: 21px;
+  top: 11px;
   content: "";
   background-image: url("../img/svg-technomart/icon-close.svg");
   background-color: transparent;
   right: 11px;
+}
+
+.modal__actions {
+  background-color: var(--modal-actions-bg);
+  padding-top: 37px;
+  padding-bottom: 37px;
+  margin-top: 67px;
+  text-align: center;
 }
 
 .new-ribbon {
@@ -924,16 +936,15 @@ img {
   height: 100%;
 }
 
-.modal-form {
-  width: 620px;
-}
+/* .modal-feedback-form {} */
 
-.modal-form__content {
+.modal-feedback-form__content,
+.modal-cart-add__content{
   margin: 0 auto;
   width: 460px;
 }
 
-.modal-form__label {
+.modal-feedback-form__label {
   display: block;
   font-family: Cuprum;
   font-style: normal;
@@ -943,30 +954,24 @@ img {
   margin-bottom: 14px;
 }
 
-.modal-form__contacts-wrapper {
+.modal-feedback-form__contacts-wrapper {
   margin-top: 39px;
   margin-bottom: 20px;
 }
 
-.modal-form__message-wrapper {
+.modal-feedback-form__message-wrapper {
   margin-bottom: 40px;
 }
 
-.modal-form__text-input::placeholder {
+.modal-feedback-form__text-input::placeholder {
   color: var(--old-price);
 }
 
-.modal-form__text-input_textarea {
+.modal-feedback-form__text-input_textarea {
   height: 114px;
 }
 
-.modal-form__send-bg {
-  background-color: #f4f4f4;
-  padding-top: 29px;
-  padding-bottom: 37px;
-}
-
-.modal-form__sent_button {
+.modal-feedback-form__sent_button {
   border-style: none;
 
   margin-bottom: 37px;
@@ -1418,6 +1423,7 @@ ul.list-unstyle.filter {
   padding: 0;
   margin: 0;
   margin-bottom: 25px;
+  text-align: center;
   border: none;
   background-color: var(--panel-filter);
 }
@@ -1493,6 +1499,40 @@ ul.list-unstyle.filter {
   top: 3px;
 }
 
+.modal-cart-add {
+  position: relative;
+  padding-top: 66px;
+}
+
+.modal-cart-add__content{
+  margin: 0 auto;
+  width: 460px;
+}
+
+.modal-cart-add::before{
+  position: absolute;
+  content: "";
+  background-image: url("../img/svg-technomart/icon-mark.svg");
+  width: 66px;
+  height: 66px;
+  left: 81px;
+  top: 48px;
+}
+
+.modal-cart-add__p {
+font-family: Cuprum;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+}
+
+.modal-cart-add__continue {
+  background-color: var(--white);
+  color: black;
+  margin-left: 10px;
+}
 /* todo bem */
 .powered-by {
   margin-bottom: 23px;
