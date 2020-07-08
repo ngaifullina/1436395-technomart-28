@@ -1713,3 +1713,49 @@ ul.list-unstyle.filter {
 .brand__image {
   max-width: 80%;
 }
+
+.opportunity {
+  background-color: var(--basic-background);
+  margin-top: 70px;
+}
+
+.opportunity__service {
+  width: 400px;
+  padding-top: 64px;
+}
+
+.opportunity__heading {
+  padding-bottom: 25px;
+}
+
+.opportunity__list {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+  margin-top: 70px;
+}
+
+.opportunity__list-companent {
+padding: 13px 22px 17px;
+background-color: var(--blue);
+border-top: 1px solid #405069;
+border-bottom: 1px solid #293449;
+color: var(--white);
+font-family: Cuprum;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 30px;
+}
+
+.opportunity__list-companent:hover {
+  background-color: var(--blue-dark);
+  border-bottom: none;
+}
+
+.opportunity__list-companent:active {
+  border: none;
+  background-color: var(--white);
+  color: var(--blue);
+}
+
