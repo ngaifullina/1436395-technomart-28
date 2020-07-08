@@ -84,8 +84,10 @@
   --options-materials: #ffbf47;
   --options-instrument: #3bbce3;
   --options-technics: #dc91d8;
-  --options-sale: #8ED78F;
-  --options-delivery: #FFC047;
+  --options-sale: #8ed78f;
+  --options-delivery: #ffc047;
+
+  --block-name: #f9f5f0;
 }
 
 body {
@@ -191,6 +193,7 @@ img {
 }
 
 .heading-2 {
+  display: inline-block;
   font-family: var(--font-secondary);
   font-style: normal;
   font-size: 30px;
@@ -198,7 +201,6 @@ img {
   text-transform: uppercase;
   font-weight: normal;
   color: var(--heading-color-1);
-  padding: 29px;
 }
 
 .heading-2_secondary {
@@ -320,6 +322,7 @@ img {
   padding: 11px 46px 9px;
   text-align: center;
   box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .button_wide {
@@ -378,6 +381,22 @@ img {
   border-color: var(--button-tertiary-border-hover);
   opacity: 0.5;
   color: inherit;
+}
+
+.block-name {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--block-name);
+  margin-bottom: 20px;
+  padding: 29px;
+  padding-right: 14px;
+}
+
+.block-name__button {
+width: 192px; 
+text-align: center;
+padding-left: 0px;
+padding-right: 0;
 }
 
 .link {
@@ -1545,7 +1564,7 @@ ul.list-unstyle.filter {
 }
 
 .options__technics-button {
-  background-color: #E7B2E4;
+  background-color: #e7b2e4;
 }
 
 .options__sale {
@@ -1555,7 +1574,7 @@ ul.list-unstyle.filter {
 }
 
 .options__sale-button {
-  background-color: #B0E3B1;
+  background-color: #b0e3b1;
 }
 
 .options__sale::before {
@@ -1585,7 +1604,7 @@ ul.list-unstyle.filter {
 }
 
 .options__delivery-button {
-  background-color: #FFD37E;
+  background-color: #ffd37e;
 }
 
 /* catalog page */
@@ -1676,4 +1695,12 @@ ul.list-unstyle.filter {
 
 .filter__power {
   margin-bottom: 23px;
+}
+
+.popular-brends {
+  margin-top: 50px;
+}
+
+.popular-brends__container {
+  height: 145px;
 }
