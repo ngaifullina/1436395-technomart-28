@@ -79,7 +79,11 @@
   --product__button-on-img-border: #367315;
 
   --modal-bg: var(--white);
-  --modal-actions-bg:#F4F4F4;
+  --modal-actions-bg: #f4f4f4;
+
+  --options-materials: #ffbf47;
+  --options-instrument: #3bbce3;
+  --options-technics: #dc91d8;
 }
 
 body {
@@ -170,6 +174,14 @@ img {
   color: var(--white);
   font-size: 16px;
   line-height: 18px;
+}
+
+.text-style-3 {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .text-style-4 {
@@ -608,7 +620,6 @@ img {
   height: 19px;
   left: 36px;
   top: 10px;
-  /* todo повернуть значок */
 }
 
 .header__login {
@@ -649,11 +660,6 @@ img {
   position: relative;
 }
 
-/* todo what is it? */
-._name:hover {
-  color: var(--black);
-}
-
 .header__login_name::before {
   position: absolute;
   content: "";
@@ -687,6 +693,14 @@ img {
   line-height: 18px;
   color: var(--blue);
   background-color: inherit;
+}
+
+.header__login_catalog:hover {
+  color: var(--basic-red);
+}
+
+.header__login_catalog:active {
+  color: var(--basic-greylight);
 }
 
 .header__login-personal {
@@ -939,7 +953,7 @@ img {
 /* .modal-feedback-form {} */
 
 .modal-feedback-form__content,
-.modal-cart-add__content{
+.modal-cart-add__content {
   margin: 0 auto;
   width: 460px;
 }
@@ -1157,13 +1171,12 @@ ul.list-unstyle.filter {
   border-left-color: var(--button-bg-active);
 }
 
-.product:hover .product__button-on-img,
+.product:hover .product__buy-save,
 .product .new {
   visibility: visible;
 }
 
-/* todo what is it? */
-.product__button-on-img {
+.product__buy-save {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -1173,7 +1186,7 @@ ul.list-unstyle.filter {
   visibility: hidden;
 }
 
-.product__button-on-img .button_secondary {
+.product__buy-save .button_secondary {
   box-shadow: inset 0px -3px 0px var(--product__button-on-img-border);
   padding: 10px 12px 10px 25px;
   border-radius: 2px;
@@ -1188,7 +1201,7 @@ ul.list-unstyle.filter {
   width: 135px;
 }
 
-.product__button-on-img .button_secondary::before {
+.product__buy-save .button_secondary::before {
   position: absolute;
   content: "";
   width: 15px;
@@ -1443,6 +1456,94 @@ ul.list-unstyle.filter {
   padding-bottom: 2px;
 }
 
+.options-wrapper {
+  margin-top: 59px;
+  margin-bottom: 59px;
+}
+
+.options__card {
+  padding-top: 20px;
+  padding-left: 23px;
+  padding-bottom: 21px;
+}
+.options__heading {
+  color: var(--white);
+}
+
+.options__button {
+  display: block;
+  width: 135px;
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.options__materials {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--options-materials);
+}
+
+.options__materials::before {
+  position: absolute;
+  content: "";
+  width: 44px;
+  height: 65px;
+  right: 43px;
+  top: 31px;
+  background-image: url("../img/svg-technomart/icon-1.svg");
+}
+
+.options__materials-button {
+  background-color: #ffd27e;
+}
+
+.options__instrument {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--options-instrument);
+}
+
+.options__instrument::before {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 61px;
+  right: 31px;
+  top: 31px;
+  background-image: url("../img/svg-technomart/icon-2.svg");
+}
+
+.options__instrument-button {
+  background-color: #76d0eb;
+}
+
+.options__technics {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--options-technics);
+}
+
+.options__technics::before {
+  position: absolute;
+  content: "";
+  width: 78px;
+  height: 62px;
+  right: 31px;
+  top: 31px;
+  background-image: url("../img/svg-technomart/icon-3.svg");
+}
+
+.options__technics-button {
+  background-color: #E7B2E4;
+}
 /* catalog page */
 .catalog {
   display: flex;
@@ -1504,12 +1605,12 @@ ul.list-unstyle.filter {
   padding-top: 66px;
 }
 
-.modal-cart-add__content{
+.modal-cart-add__content {
   margin: 0 auto;
   width: 460px;
 }
 
-.modal-cart-add::before{
+.modal-cart-add::before {
   position: absolute;
   content: "";
   background-image: url("../img/svg-technomart/icon-mark.svg");
@@ -1520,12 +1621,7 @@ ul.list-unstyle.filter {
 }
 
 .modal-cart-add__p {
-font-family: Cuprum;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 30px;
-text-align: center;
+  text-align: center;
 }
 
 .modal-cart-add__continue {
@@ -1533,7 +1629,7 @@ text-align: center;
   color: black;
   margin-left: 10px;
 }
-/* todo bem */
-.powered-by {
+
+.filter__power {
   margin-bottom: 23px;
 }
