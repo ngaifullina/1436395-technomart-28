@@ -387,7 +387,6 @@ img {
   display: flex;
   justify-content: space-between;
   background-color: var(--block-name);
-  margin-bottom: 20px;
   padding: 29px;
   padding-right: 14px;
 }
@@ -1697,10 +1696,20 @@ ul.list-unstyle.filter {
   margin-bottom: 23px;
 }
 
-.popular-brends {
+.popular-brands {
   margin-top: 50px;
 }
 
-.popular-brends__container {
+.brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
   height: 145px;
+  border: 1px solid var(--light-grey);
+}
+
+.brand__image {
+  max-width: 80%;
 }
