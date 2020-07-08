@@ -84,6 +84,8 @@
   --options-materials: #ffbf47;
   --options-instrument: #3bbce3;
   --options-technics: #dc91d8;
+  --options-sale: #8ED78F;
+  --options-delivery: #FFC047;
 }
 
 body {
@@ -1465,6 +1467,7 @@ ul.list-unstyle.filter {
   padding-top: 20px;
   padding-left: 23px;
   padding-bottom: 21px;
+  margin-bottom: 20px;
 }
 .options__heading {
   color: var(--white);
@@ -1544,6 +1547,47 @@ ul.list-unstyle.filter {
 .options__technics-button {
   background-color: #E7B2E4;
 }
+
+.options__sale {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--options-sale);
+}
+
+.options__sale-button {
+  background-color: #B0E3B1;
+}
+
+.options__sale::before {
+  position: absolute;
+  content: "";
+  width: 59px;
+  height: 72px;
+  right: 45px;
+  top: 26px;
+  background-image: url("../img/svg-technomart/icon-4.svg");
+}
+
+.options__delivery {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--options-delivery);
+}
+
+.options__delivery::before {
+  position: absolute;
+  content: "";
+  width: 78px;
+  height: 63px;
+  right: 31px;
+  top: 32px;
+  background-image: url("../img/svg-technomart/icon-5.svg");
+}
+
+.options__delivery-button {
+  background-color: #FFD37E;
+}
+
 /* catalog page */
 .catalog {
   display: flex;
