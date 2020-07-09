@@ -1493,6 +1493,7 @@ ul.list-unstyle.filter {
 
 .options__button {
   display: block;
+  cursor: pointer;
   width: 135px;
   font-family: Cuprum;
   font-style: normal;
@@ -1748,6 +1749,10 @@ ul.list-unstyle.filter {
   left: 150px;
 }
 
+.options__sale-delivery {
+  display: flex;
+  flex-direction: column;
+}
 .opportunity__list {
   display: flex;
   flex-direction: column;
