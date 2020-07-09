@@ -784,7 +784,7 @@ img {
   line-height: 1;
 }
 
-.header__search input {
+.header__search-input {
   font-size: 18px;
   font-family: var(--font-secondary);
   font-style: normal;
@@ -799,22 +799,23 @@ img {
   position: relative;
 }
 
-.header__search input:focus {
+.header__search-input:focus {
   background-color: var(--white);
   border: none;
   outline: 0;
 }
 
-.header__search input::placeholder {
+.header__search-input:placeholder {
   color: white;
 }
 
-.header__input {
+/* .header__input {
   display: inline-block;
   position: absolute;
-}
+} */
 
-.header__input:focus::before {
+/* white icon */
+.header__search-icon {
   content: "";
   width: 17px;
   height: 17px;
@@ -826,6 +827,11 @@ img {
   color: var(--basic-red);
   pointer-events: none;
   /* не работает */
+}
+
+.header__search-input:active + .header__search-icon {
+  /* todo red color */
+  /* different svg */
 }
 
 .header__search::before {
