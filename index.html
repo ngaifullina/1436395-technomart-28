@@ -26,7 +26,6 @@
                 action="https://echo.htmlacademy.ru/courses"
                 method="post"
               >
-                <!-- <label class="visually-hidden" for="search">Поиск</label> -->
                 <input
                   class="header__search-input"
                   type="text"
@@ -189,11 +188,28 @@
                 >
                 <img
                   class="wide"
-                  src="../img/hammer-drill.jpg"
+                  src="./img/hammer-drill.jpg"
                   alt="Перфоратор"
                   height="266"
                 />
-                <!-- <a href="" class="next"></a> -->
+              </div>
+
+              <div class="options__slide options__slide-next">
+                <div class="options__slide-shadow">
+                  <h2 class="options__slide-heading">Дрели</h2>
+                  <p class="options__slide-p">Соседям на радость!</p>
+                </div>
+                <a href="blank.html" class="options__slide-previous"></a>
+                <a href="blank.html" class="options__slide-next"></a>
+                <a href="catalog.html" class="button options__slide-button"
+                  >Открыть каталог</a
+                >
+                <img
+                  class="wide"
+                  src="./img/drills.jpg"
+                  alt="Перфоратор"
+                  height="266"
+                />
               </div>
             </div>
             <div class="col-4">
@@ -321,42 +337,42 @@
         <div class="row">
           <div class="col-3">
             <a class="brand" href="blank.html">
-              <img src="../img/bosch.png" />
+              <img src="./img/bosch.png" />
             </a>
           </div>
           <div class="col-3">
             <a class="brand" href="blank.html">
-              <img src="../img/makita.png" />
+              <img src="./img/makita.png" />
             </a>
           </div>
           <div class="col-3">
             <a class="brand" href="blank.html">
-              <img src="../img/dewalt.png" />
+              <img src="./img/dewalt.png" />
             </a>
           </div>
           <div class="col-3">
             <a class="brand" href="blank.html">
-              <img src="../img/interscol.png" />
+              <img src="./img/interscol.png" />
             </a>
           </div>
           <div class="col-3">
             <a class="brand" href="blank.html">
-              <img src="../img/hitachi.png" />
+              <img src="./img/hitachi.png" />
             </a>
           </div>
           <div class="col-3">
             <a class="brand" href="blank.html">
-              <img src="../img/lg.png" />
+              <img src="./img/lg.png" />
             </a>
           </div>
           <div class="col-3">
             <a class="brand" href="blank.html">
-              <img src="../img/aeg.png" />
+              <img src="./img/aeg.png" />
             </a>
           </div>
           <div class="col-3">
             <a class="brand" href="blank.html">
-              <img src="../img/metabo.png" />
+              <img src="./img/metabo.png" />
             </a>
           </div>
         </div>
@@ -373,13 +389,17 @@
           <div class="row">
             <div class="col-4">
               <div class="opportunity__list">
-                <div class="opportunity__list-companent">Доставка</div>
+                <div
+                  class="opportunity__list-companent opportunity__list-companent_active"
+                >
+                  Доставка
+                </div>
                 <div class="opportunity__list-companent">Гарантия</div>
                 <div class="opportunity__list-companent">Кредит</div>
               </div>
             </div>
             <div class="col-4">
-              <div class="opportunity__changing-block opportunity__delivery">
+              <div class="opportunity__changing-block-2 opportunity__delivery">
                 <h2 class="heading-2 opportunity__heading">
                   Доставка
                 </h2>
@@ -391,14 +411,40 @@
                   Ведь мы неплохо заработаем,<br />поднимая его на ваш этаж!
                 </p>
               </div>
+
+              <div
+                class="opportunity__changing-block opportunity__changing-block opportunity__guarantee"
+              >
+                <h2 class="heading-2 opportunity__heading">
+                  Гарантия
+                </h2>
+                <p>
+                  Если купленный у нас товар поломается или заискрит, а также в
+                  случае пожара, спровоцированного его возгоранием, вы всегда
+                  можете быть уверены в нашей гарантии. Мы обменяем сгоревший
+                  товар на новый. Дом уж восстановите как-нибудь сами.
+                </p>
+              </div>
+              <div
+                class="opportunity__changing-block opportunity__changing-block-2 opportunity__credit"
+              >
+                <h2 class="heading-2 opportunity__heading">
+                  Кредит
+                </h2>
+                <p>
+                  Залезть в долговую яму стало проще! Кредитные консультанты
+                  придут вам на помощь.
+                </p>
+                <a class="button" href="blank.html">Отправить заявку</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="main">
-        <div class="row">
-          <div class="col-6 main__first-column">
+      <div class="main container">
+        <div class="row main__columns">
+          <div class="col-6">
             <h2 class="heading-2 heading-2_secondary">
               Компания «Техномарт»
             </h2>
@@ -425,7 +471,7 @@
           <div class="col-4">
             <h2 class="heading-2 heading-2_secondary">Контакты</h2>
             <p class="text-style-4 main__second-column_text">
-              Вы можете забрать товар сами, заехав в наш офис:
+              Вы можете забрать товар сами,<br />заехав в наш офис:
             </p>
             <a class="main__img" href="#">
               <img
@@ -580,13 +626,13 @@
       </div>
     </footer>
 
-    <div class="modal modal-map">
+    <div class="visually-hidden modal modal-map">
       <button type="button" class="modal__close"></button>
       <div class="modal-map__map"></div>
     </div>
 
     <!-- modal-feedback-form -->
-    <div class="modal">
+    <div class="visually-hidden modal">
       <button type="button" class="modal__close"></button>
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-feedback-form__content">
