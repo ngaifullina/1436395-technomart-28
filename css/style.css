@@ -953,6 +953,7 @@ img {
   height: 44px;
   background-color: var(--social-button-bg);
   border-radius: 100%;
+  padding-right: 3px;
 }
 
 .social-button:hover,
@@ -1250,7 +1251,7 @@ ul.list-unstyle.filter {
   line-height: 20px;
   width: 185px;
   text-align: center;
-  margin: 28px 18px 7px;
+  margin: 28px 15px 7px;
 }
 
 .product__old-price {
@@ -1260,9 +1261,8 @@ ul.list-unstyle.filter {
   color: var(--old-price);
   text-decoration-line: line-through;
   text-transform: uppercase;
-  text-align: center;
-  margin: 0;
   margin-bottom: 13px;
+  margin-left: -6px;
 }
 
 .product__heading_without-old-price {
@@ -1274,7 +1274,6 @@ ul.list-unstyle.filter {
   position: relative;
 
   color: var(--button-text-color);
-  font-family: var(--font-secondary);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 17px;
@@ -1286,7 +1285,7 @@ ul.list-unstyle.filter {
   white-space: nowrap;
   line-height: 1;
   cursor: pointer;
-  padding: 11px 44px 10px 32px;
+  padding: 11px 40px 10px 35px;
 }
 
 .product__new-price::before {
@@ -1730,7 +1729,7 @@ ul.list-unstyle.filter {
   flex-wrap: wrap;
   margin: 0;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 28px;
 }
 
 .breadcrumbs {
