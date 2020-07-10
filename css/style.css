@@ -148,14 +148,12 @@ img {
   overflow: hidden;
 }
 
-/* todo do I need it? */
 .page {
   height: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* todo bem */
 .page-body {
   min-height: 100%;
   display: grid;
@@ -410,8 +408,6 @@ img {
 }
 
 .link {
-  /* жёлтый по умолчанию, чтобы было ви но
-       как на чёрном, так и на белом фоне */
   color: var(--link-color);
   font-size: 18px;
 }
@@ -566,7 +562,6 @@ img {
 }
 
 .logo {
-  /* common between pages */
   height: 18px;
   background-color: var(--basic-red);
   padding: 12px 52px;
@@ -595,7 +590,6 @@ img {
 .header__top-contols {
   display: flex;
   padding: 0;
-  /* justify-content: space-between; */
   height: 42px;
 }
 
@@ -905,7 +899,6 @@ img {
 }
 
 .header__saved {
-  /* padding-right: 50px; */
   padding-left: 40px;
   position: relative;
 }
