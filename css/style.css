@@ -207,7 +207,6 @@ img {
   color: var(--heading-color-2);
   padding: 0px;
   margin-bottom: 24px;
-  margin-top: 64px;
 }
 
 .heading-4 {
@@ -284,6 +283,7 @@ img {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  padding: 0;
   padding-top: 10px;
   padding-left: 19px;
 }
@@ -401,7 +401,8 @@ img {
   padding-right: 14px;
 }
 .block-name-drill {
-  padding: 29px;
+  padding: 26px;
+  padding-top: 32px;
 }
 
 .block-name__button {
@@ -1041,6 +1042,8 @@ img {
 
 /* todo these are not elements of panel, but elements of filters */
 .panel__filter-sort_part {
+  display: block;
+  white-space: nowrap;
   cursor: pointer;
   opacity: 0.3;
   border-bottom: 1px dotted var(--basic-red);
@@ -1053,12 +1056,12 @@ img {
   opacity: 0.3;
 }
 
-.panel__filter-sort_part-1 {
+/* .panel__filter-sort_part-1 {
   margin-left: 140px;
 }
 
 .panel__filter-sort_part-2 {
-  margin-left: 79px;
+  margin-left: 71px;
 }
 
 .panel__filter-sort_part-3 {
@@ -1070,7 +1073,7 @@ img {
 }
 .panel__filter-sort_part-5 {
   margin-left: 21px;
-}
+} */
 .panel__filter-sort_part:hover {
   opacity: 1;
   color: var(--heading-color-2);
@@ -1148,7 +1151,7 @@ ul.list-unstyle.filter {
   border: 1px var(--light-grey) solid;
   width: 220px;
   min-height: 318px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -1164,10 +1167,9 @@ ul.list-unstyle.filter {
 
 .product__image {
   display: block;
-  margin-left: 33px;
+  margin-left: -11px;
   margin-top: 22px;
   height: 128px;
-  /* width: 184px; */
   z-index: 3;
 }
 
@@ -1718,10 +1720,12 @@ ul.list-unstyle.filter {
 
 .main__columns {
   justify-content: space-between;
+  margin-top: 71px;
+  margin-bottom: 70px;
 }
 
-.main__img {
-  margin-bottom: 25px;
+.write-us {
+  margin-top: 25px;
 }
 /* catalog page */
 .catalog {
@@ -1819,6 +1823,7 @@ ul.list-unstyle.filter {
 
 .brand {
   display: flex;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
@@ -1835,7 +1840,7 @@ ul.list-unstyle.filter {
   background-color: var(--basic-background);
   padding-top: 65px;
   margin-top: 70px;
-  padding-bottom: 98px;
+  padding-bottom: 70px;
   overflow: hidden;
 }
 
@@ -1904,6 +1909,7 @@ ul.list-unstyle.filter {
 }
 .opportunity__list {
   display: flex;
+  width: 240px;
   flex-direction: column;
   margin-right: 80px;
   margin-top: 40px;
@@ -1996,3 +2002,5 @@ ul.list-unstyle.filter {
   width: 907px;
   margin-top: 25px;
 }
+
+
