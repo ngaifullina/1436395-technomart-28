@@ -283,9 +283,6 @@ img {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 0;
-  padding-top: 10px;
-  padding-left: 19px;
 }
 
 .panel-2__heading {
@@ -1048,7 +1045,6 @@ img {
   cursor: pointer;
   opacity: 0.3;
   border-bottom: 1px dotted var(--basic-red);
-  display: inline-block;
   line-height: 1;
   text-transform: uppercase;
   font-weight: normal;
@@ -1057,7 +1053,7 @@ img {
   opacity: 0.3;
 }
 
-/* .panel__filter-sort_part-1 {
+.panel__filter-sort_part-1 {
   margin-left: 140px;
 }
 
@@ -1074,7 +1070,8 @@ img {
 }
 .panel__filter-sort_part-5 {
   margin-left: 21px;
-} */
+} 
+
 .panel__filter-sort_part:hover {
   opacity: 1;
   color: var(--heading-color-2);
