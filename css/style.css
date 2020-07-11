@@ -517,12 +517,12 @@ table {
   font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/cuprum-v11-latin_cyrillic-regular.eot");
+  src: url("../fonts/cuprum-v11-latin-cyrillic-regular.eot");
   /* IE9 Compat Modes */
   src: local("Cuprum Regular"), local("Cuprum-Regular"),
-    url("../fonts/cuprum-v11-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/cuprum-v11-latin-cyrillic-regular.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("../fonts/cuprum-v11-latin_cyrillic-regular.woff") format("woff"); /* Modern Browsers */
+      url("../fonts/cuprum-v11-latin-cyrillic-regular.woff") format("woff"); /* Modern Browsers */
 }
 
 /* cuprum-700 - latin_cyrillic */
@@ -531,9 +531,9 @@ table {
   font-style: normal;
   font-weight: 700;
   src: local("Cuprum Bold"), local("Cuprum-Bold"),
-    url("../fonts/cuprum-v11-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/cuprum-v11-latin-cyrillic-700.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("../fonts/cuprum-v11-latin_cyrillic-700.woff") format("woff"); /* Modern Browsers */
+      url("../fonts/cuprum-v11-latin-cyrillic-700.woff") format("woff"); /* Modern Browsers */
 }
 
 /* cuprum-italic - latin_cyrillic */
@@ -542,9 +542,9 @@ table {
   font-style: italic;
   font-weight: 400;
   src: local("Cuprum Italic"), local("Cuprum-Italic"),
-    url("../fonts/cuprum-v11-latin_cyrillic-italic.woff2") format("woff2"),
+    url("../fonts/cuprum-v11-latin-cyrillic-italic.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("../fonts/cuprum-v11-latin_cyrillic-italic.woff") format("woff"); /* Modern Browsers */
+      url("../fonts/cuprum-v11-latin-cyrillic-italic.woff") format("woff"); /* Modern Browsers */
 }
 
 /* pt-sans-regular - latin_cyrillic */
@@ -553,9 +553,9 @@ table {
   font-style: normal;
   font-weight: 400;
   src: local("PT Sans"), local("PTSans-Regular"),
-    url("../fonts/pt-sans-v11-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/pt-sans-v11-latin-cyrillic-regular.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("../fonts/pt-sans-v11-latin_cyrillic-regular.woff") format("woff"); /* Modern Browsers */
+      url("../fonts/pt-sans-v11-latin-cyrillic-regular.woff") format("woff"); /* Modern Browsers */
 }
 
 /* pt-sans-700 - latin_cyrillic */
@@ -564,9 +564,9 @@ table {
   font-style: normal;
   font-weight: 700;
   src: local("PT Sans Bold"), local("PTSans-Bold"),
-    url("../fonts/pt-sans-v11-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/pt-sans-v11-latin-cyrillic-700.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("../fonts/pt-sans-v11-latin_cyrillic-700.woff") format("woff"); /* Modern Browsers */
+      url("../fonts/pt-sans-v11-latin-cyrillic-700.woff") format("woff"); /* Modern Browsers */
 }
 
 :root {
@@ -960,6 +960,18 @@ img {
   color: inherit;
 }
 
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: space-between;
+  /* margin-top: 28px; */
+}
+
+.catalog_page-catalog {
+  margin-bottom: 28px;
+}
+
 .block-name {
   display: flex;
   justify-content: space-between;
@@ -967,6 +979,7 @@ img {
   background-color: var(--block-name);
   padding: 26px;
   padding-right: 14px;
+  margin-bottom: 20px;
 }
 .block-name-drill {
   padding: 26px;
@@ -1137,7 +1150,7 @@ img {
 .logo {
   height: 18px;
   background-color: var(--basic-red);
-  padding: 12px 52px;
+  padding: 12px 55px;
   display: block;
   box-shadow: 0 5px 0 var(--logo-shadow);
 }
@@ -1237,7 +1250,7 @@ img {
 
 .header__login_enter {
   padding-left: 45px;
-  padding-right: 29px;
+  padding-right: 28px;
   position: relative;
   margin-right: 10px;
 }
@@ -1292,7 +1305,7 @@ img {
   color: var(--basic-greylight);
 }
 
-.header__login_catalog {
+.header__login_ {
   display: block;
   font-size: 16px;
   line-height: 18px;
@@ -1437,8 +1450,8 @@ img {
   line-height: 24px;
   margin: 0;
   padding: 0;
-  margin-left: 10px;
-  padding-top: 4px;
+  margin-left: 11px;
+  padding-top: 3px;
   color: var(--blue);
 }
 
@@ -1474,7 +1487,7 @@ img {
 }
 
 .header__saved {
-  padding-left: 40px;
+  padding-left: 43px;
   position: relative;
 }
 
@@ -1715,6 +1728,7 @@ ul.list-unstyle.filter {
 .product {
   list-style: none;
   border: 1px var(--light-grey) solid;
+  box-sizing: border-box;
   width: 220px;
   min-height: 318px;
   margin-bottom: 18px;
@@ -1735,8 +1749,20 @@ ul.list-unstyle.filter {
   display: block;
   margin-left: -11px;
   margin-top: 22px;
+  margin-bottom: 28px;
   height: 128px;
   z-index: 3;
+}
+
+.product__image_new {
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+.product__image_first {
+  margin-top: 6px;
+  margin-left: -5px;
+  margin-bottom: 45px;
 }
 
 .product__image:hover {
@@ -1814,14 +1840,23 @@ ul.list-unstyle.filter {
 }
 
 .product__heading {
+  display: inline-block;
+  cursor: pointer;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   width: 185px;
   text-align: center;
-  margin: 28px 15px 7px;
+  margin-left: 16px;
 }
 
+.product__heading_new {
+  margin-left: 16px;
+}
+
+.product__heading_first {
+  margin-left: 18px;
+}
 .product__old-price {
   font-weight: bold;
   font-size: 17px;
@@ -1829,8 +1864,8 @@ ul.list-unstyle.filter {
   color: var(--old-price);
   text-decoration-line: line-through;
   text-transform: uppercase;
+  margin-top: 10px;
   margin-bottom: 13px;
-  margin-left: -6px;
 }
 
 .product__heading_without-old-price {
@@ -1903,7 +1938,7 @@ ul.list-unstyle.filter {
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
-  margin: -2px 93px 44.5px 26px;
+  margin: -2px 93px 44.5px 29px;
 }
 
 .header__phone-adress {
@@ -2201,10 +2236,6 @@ ul.list-unstyle.filter {
   position: relative;
 }
 
-.options__slide-next {
-  display: none;
-}
-
 .options__slide::before {
   position: absolute;
   content: "";
@@ -2296,13 +2327,6 @@ ul.list-unstyle.filter {
   margin-top: 25px;
 }
 /* catalog page */
-.catalog {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  justify-content: space-between;
-  margin-top: 28px;
-}
 
 .breadcrumbs {
   list-style: none;
@@ -2387,6 +2411,7 @@ ul.list-unstyle.filter {
 
 .popular-brands {
   margin-top: 50px;
+  margin-bottom: 0;
 }
 
 .brand {
