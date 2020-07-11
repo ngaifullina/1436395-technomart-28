@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -510,9 +510,7 @@ table {
   border-spacing: 0;
 }
 
-
 /* FONTS */
-
 
 /* cuprum-regular - latin_cyrillic */
 @font-face {
@@ -765,6 +763,7 @@ img {
 
 .heading-2 {
   display: inline-block;
+  vertical-align: middle;
   font-family: var(--font-secondary);
   font-style: normal;
   font-size: 30px;
@@ -877,6 +876,7 @@ img {
 .textarea {
   display: inline-block;
   resize: none;
+  vertical-align: middle;
 }
 
 .input_wide,
@@ -887,6 +887,7 @@ img {
 
 .button {
   display: inline-block;
+  vertical-align: middle;
   border: none;
   outline: none;
   cursor: pointer;
@@ -897,7 +898,6 @@ img {
   font-size: 14px;
   line-height: 18px;
   padding: 11px 46px 9px;
-  text-align: center;
   box-sizing: border-box;
   white-space: nowrap;
 }
@@ -944,7 +944,7 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
+  vertical-align: middle;
   box-sizing: border-box;
 }
 
@@ -1202,6 +1202,7 @@ img {
 .header__phone {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   color: var(--basic-red);
   font-size: 21px;
   line-height: 30px;
@@ -1226,6 +1227,7 @@ img {
 
 .header__login {
   display: inline-block;
+  vertical-align: middle;
   color: var(--black);
   background-color: var(--white);
   font-size: 21px;
@@ -1637,7 +1639,7 @@ img {
 }
 .panel__filter-sort_part-5 {
   margin-left: 21px;
-} 
+}
 
 .panel__filter-sort_part:hover {
   opacity: 1;
@@ -1837,6 +1839,7 @@ ul.list-unstyle.filter {
 
 .product__new-price {
   display: inline-block;
+  vertical-align: middle;
   position: relative;
 
   color: var(--button-text-color);
@@ -1893,6 +1896,7 @@ ul.list-unstyle.filter {
 
 .header__heading {
   display: inline-block;
+  vertical-align: middle;
   width: 197px;
   color: var(--header-heading-color);
   font-style: italic;
@@ -1978,6 +1982,7 @@ ul.list-unstyle.filter {
 
 .button-sort {
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   height: 10px;
   width: 12px;
@@ -2002,6 +2007,7 @@ ul.list-unstyle.filter {
 
 .button-sort__desc {
   display: inline-block;
+  vertical-align: middle;
   margin-left: 21px;
 }
 

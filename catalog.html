@@ -17,6 +17,8 @@
                   class="logo"
                   src="img/svg-technomart/logo-technomart.svg"
                   alt="Логотип"
+                  width="108"
+                  height="18"
                 />
               </a>
               <form
@@ -24,11 +26,13 @@
                 action="https://echo.htmlacademy.ru/courses"
                 method="post"
               >
-                <input
-                  class="header__search-input"
-                  type="text"
-                  placeholder="Поиск:"
-                />
+                <label
+                  ><input
+                    class="header__search-input"
+                    type="text"
+                    placeholder="Поиск:"
+                  />
+                </label>
                 <span class="header__search-icon"></span>
               </form>
             </div>
@@ -168,22 +172,26 @@
               <div class="panel-2">
                 <h4 class="panel-2__heading heading-4">Фильтр:</h4>
               </div>
-              <legend class="filter-heading filter-heading_price">Цена:</legend>
+              <h3 class="filter-heading filter-heading_price">Цена:</h3>
               <div class="panel-2__price"></div>
               <div class="price-gradation">
+              <label>
                 <input
                   class="price-gradation__input"
                   type="text"
                   id="low-price"
                   placeholder="0"
                 />
+              </label>
                 <p>—</p>
+              <label>
                 <input
                   class="price-gradation__input"
                   type="text"
                   placeholder="30000"
                   id="high-price"
                 />
+              </label>
               </div>
               <fieldset class="filter__fieldset">
                 <legend class="filter-heading filter-heading_2">
@@ -586,7 +594,12 @@
       <div class="container">
         <div class="footer__first-row">
           <a class="logo logo-footer" href="index.html">
-            <img src="img/svg-technomart/logo-technomart.svg" alt="Логотип" />
+            <img
+              src="img/svg-technomart/logo-technomart.svg"
+              alt="Логотип"
+              width="138"
+              height="23"
+            />
           </a>
           <ul class="list-unstyle footer__first-row-links">
             <li>
