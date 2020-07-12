@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -2232,11 +2232,11 @@ ul.list-unstyle.filter {
   background-color: #ffd37e;
 }
 
-.options__slide {
+.options__slider {
   position: relative;
 }
 
-.options__slide::before {
+.options__slider::before {
   position: absolute;
   content: "";
   width: 10px;
@@ -2247,7 +2247,7 @@ ul.list-unstyle.filter {
   left: 297px;
 }
 
-.options__slide::after {
+.options__slider::after {
   position: absolute;
   content: "";
   width: 6px;
@@ -2259,14 +2259,14 @@ ul.list-unstyle.filter {
   right: 297px;
 }
 
-.options__slide-shadow {
+.options__slider-shadow {
   position: absolute;
   width: 620px;
   height: 104px;
   background: rgba(0, 0, 0, 0.25);
 }
 
-.options__slide-p {
+.options__slider-p {
   position: absolute;
   color: var(--white);
   top: 64px;
@@ -2277,7 +2277,7 @@ ul.list-unstyle.filter {
   line-height: 23px;
 }
 
-.options__slide-heading {
+.options__slider-heading {
   position: absolute;
   font-family: var(--font-secondary);
   font-style: normal;
@@ -2290,7 +2290,7 @@ ul.list-unstyle.filter {
   left: 23px;
 }
 
-.options__slide-previous {
+.options__slider-previous {
   position: absolute;
   width: 26px;
   height: 26px;
@@ -2301,7 +2301,7 @@ ul.list-unstyle.filter {
   transform: rotate(45deg);
 }
 
-.options__slide-next {
+.options__slider-next {
   position: absolute;
   width: 26px;
   height: 26px;
@@ -2311,10 +2311,15 @@ ul.list-unstyle.filter {
   right: 27px;
   transform: rotate(315deg);
 }
-.options__slide-button {
+
+.options__slider-button {
   position: absolute;
   top: 201px;
   left: 24px;
+}
+
+.options__slide {
+  width: 100%;
 }
 
 .main__columns {
