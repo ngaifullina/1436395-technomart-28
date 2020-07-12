@@ -2,7 +2,7 @@ var HIDDEN = "visually-hidden";
 
 initOptionsSlider();
 initOpportunitySlider();
-initWriteUsModal();
+initWriteUsModal();``
 initMapModal();
 
 function initWriteUsModal() {
