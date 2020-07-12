@@ -977,8 +977,9 @@ img {
   justify-content: space-between;
   align-items: center;
   background-color: var(--block-name);
-  padding: 26px;
+  padding: 28px;
   padding-right: 14px;
+  padding-bottom: 24px;
   margin-bottom: 20px;
 }
 .block-name-drill {
@@ -1181,6 +1182,7 @@ img {
 
 .header__top-contols_right {
   display: flex;
+  margin-left: auto;
 }
 
 .header__top-contols_left {
@@ -1208,7 +1210,7 @@ img {
   list-style: none;
   font-size: 18px;
   box-shadow: 0 5px 0 var(--header-nav-shadow);
-  padding: 0 21px 0 21px;
+  padding: 0 18px 0 23px;
   box-sizing: border-box;
 }
 
@@ -1250,7 +1252,7 @@ img {
 
 .header__login_enter {
   padding-left: 45px;
-  padding-right: 28px;
+  padding-right: 25px;
   position: relative;
   margin-right: 10px;
 }
@@ -1441,10 +1443,6 @@ img {
   color: white;
 }
 
-.header__cart {
-  text-transform: none;
-}
-
 .header__address {
   font-size: 14px;
   line-height: 24px;
@@ -1468,9 +1466,8 @@ img {
 
 .header__shopping-controls:nth-child(2) {
   position: relative;
-  padding-left: 33px;
-  padding-right: 26px;
-  margin-left: 24px;
+  padding-left: 36px;
+  padding-right: 23px;
 }
 
 .header__shopping-controls:nth-child(2)::before {
@@ -1487,8 +1484,10 @@ img {
 }
 
 .header__saved {
-  padding-left: 43px;
+  padding-right: 25px;
   position: relative;
+  margin-right: 12px;
+  margin-left: 15px;
 }
 
 .header__saved::before {
@@ -1499,7 +1498,7 @@ img {
   background-position: 0 0;
   width: 14px;
   height: 16px;
-  left: 20px;
+  left: -7px;
   top: 13px;
   opacity: 0.3;
 }
@@ -1747,22 +1746,22 @@ ul.list-unstyle.filter {
 
 .product__image {
   display: block;
-  margin-left: -11px;
+  margin-left: 32px;
   margin-top: 22px;
-  margin-bottom: 28px;
-  height: 128px;
+  margin-bottom: 29px;
   z-index: 3;
 }
 
 .product__image_new {
-  margin-top: 26px;
-  margin-bottom: 26px;
+  margin-top: 27px;
+  margin-bottom: 41px;
+  margin-left: 39px;
 }
 
 .product__image_first {
   margin-top: 6px;
-  margin-left: -5px;
-  margin-bottom: 45px;
+  margin-left: 17px;
+  margin-bottom: 9px;
 }
 
 .product__image:hover {
@@ -1847,16 +1846,8 @@ ul.list-unstyle.filter {
   line-height: 20px;
   width: 185px;
   text-align: center;
-  margin-left: 16px;
 }
 
-.product__heading_new {
-  margin-left: 16px;
-}
-
-.product__heading_first {
-  margin-left: 18px;
-}
 .product__old-price {
   font-weight: bold;
   font-size: 17px;
@@ -1864,8 +1855,8 @@ ul.list-unstyle.filter {
   color: var(--old-price);
   text-decoration-line: line-through;
   text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 13px;
+  margin-top: 5px;
+  margin-bottom: 12px;
 }
 
 .product__heading_without-old-price {
