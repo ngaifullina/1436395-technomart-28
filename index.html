@@ -44,7 +44,7 @@
                 Закладки: 0
               </a>
               <a
-                class="header__top-nav-element header__shopping-controls"
+                class="header__top-nav-element header__shopping-controls header__shopping-controls-index"
                 href="blank.html"
               >
                 Корзина: 0
@@ -181,55 +181,56 @@
             </div>
             <div class="col-8">
               <div class="options__slider">
-                <div class="options__slider-shadow">
-                  <h2 class="options__slider-heading">Перфораторы</h2>
-                  <p class="options__slider-p">Настоящие мужские игрушки</p>
-                </div>
-                <a href="blank.html" class="options__slider-previous"></a>
-                <a href="blank.html" class="options__slider-next"></a>
-                <a href="catalog.html" class="button options__slider-button">
-                  Открыть каталог
-                </a>
-                <img
-                  class="options__slide options__slide-0"
-                  src="./img/hammer-drill.jpg"
-                  alt="Перфоратор"
-                  height="266"
-                  width="620"
-                />
-                <img
-                  class="options__slide options__slide-1 visually-hidden"
-                  src="./img/hammer-drill.jpg"
-                  alt="Перфоратор"
-                  height="266"
-                  width="620"
-                />
-                <img
-                  class="options__slide options__slide-2 visually-hidden"
-                  src="./img/hammer-drill.jpg"
-                  alt="Перфоратор"
-                  height="266"
-                  width="620"
-                />
-              </div>
+                <a
+                  href="blank.html"
+                  class="option__slider-control option__slider-control_prev"
+                ></a>
+                <a
+                  href="blank.html"
+                  class="option__slider-control option__slider-control_next"
+                ></a>
 
-              <div class="options__slider options__slider-next">
-                <div class="options__slider-shadow">
-                  <h2 class="options__slider-heading">Дрели</h2>
-                  <p class="options__slider-p">Соседям на радость!</p>
+                <div class="options__slide options__slide-0">
+                  <div class="options__slider-shadow">
+                    <h2 class="options__slider-heading">Перфораторы</h2>
+                    <p class="options__slider-p">Настоящие мужские игрушки</p>
+                  </div>
+
+                  <a href="catalog.html" class="button options__slider-button">
+                    Открыть каталог
+                  </a>
+                  <img
+                    class="options__slider-image"
+                    src="./img/hammer-drill.jpg"
+                    alt="Перфоратор"
+                    height="266"
+                    width="620"
+                  />
                 </div>
-                <a href="blank.html" class="options__slider-previous"></a>
-                <a href="blank.html" class="options__slider-next"></a>
-                <a href="catalog.html" class="button options__slider-button">
-                  Открыть каталог
-                </a>
-                <img
-                  class="wide"
-                  src="./img/drills.jpg"
-                  alt="Перфоратор"
-                  height="266"
-                  width="620"
-                />
+
+                <div class="options__slide options__slide-1 visually-hidden">
+                  <div class="options__slider-shadow">
+                    <h2 class="options__slider-heading">Дрели</h2>
+                    <p class="options__slider-p">Соседям на радость!</p>
+                  </div>
+                  <a href="catalog.html" class="button options__slider-button">
+                    Открыть каталог
+                  </a>
+                  <img
+                    class="options__slider-image"
+                    src="./img/hammer-drill.jpg"
+                    alt="Перфоратор"
+                    height="266"
+                    width="620"
+                  />
+                </div>
+
+                <div class="options__indicators">
+                  <div
+                    class="options__indicator options__indicator-0 options__indicator_active"
+                  ></div>
+                  <div class="options__indicator options__indicator-1"></div>
+                </div>
               </div>
             </div>
             <div class="col-4">
@@ -268,17 +269,14 @@
             />
 
             <div class="product__buy-save">
-              <a class="button_secondary" href="blank.html">
+              <a class="button_secondary product__buy" href="blank.html">
                 Купить
               </a>
               <a class="button_tertiary" href="blank.html">
                 В закладки
               </a>
             </div>
-            <a
-              class="product__heading"
-              href="blank.html"
-            >
+            <a class="product__heading" href="blank.html">
               Перфоратор BOSCH BFG 9000
             </a>
             <p class="product__old-price">32500 р.</p>
@@ -295,7 +293,7 @@
             />
             <div class="new-ribbon">New</div>
             <div class="product__buy-save">
-              <a class="button_secondary" href="blank.html">
+              <a class="button_secondary product__buy" href="blank.html">
                 Купить
               </a>
               <a class="button_tertiary" href="blank.html">
@@ -318,7 +316,7 @@
               alt="Перфоратор BOSCH BFG 6000"
             />
             <div class="product__buy-save">
-              <a class="button_secondary" href="blank.html">
+              <a class="button_secondary product__buy" href="blank.html">
                 Купить
               </a>
               <a class="button_tertiary" href="blank.html">
@@ -340,16 +338,14 @@
             />
             <div class="new-ribbon">New</div>
             <div class="product__buy-save">
-              <a class="button_secondary" href="blank.html">
+              <a class="button_secondary product__buy" href="blank.html">
                 Купить
               </a>
               <a class="button_tertiary" href="blank.html">
                 В закладки
               </a>
             </div>
-            <a
-              class="product__heading product__heading_without-old-price"
-            >
+            <a class="product__heading product__heading_without-old-price">
               Перфоратор BOSCH BFG 2000
             </a>
             <div class="product__new-price">
@@ -442,12 +438,16 @@
             <div class="col-4">
               <div class="opportunity__list">
                 <div
-                  class="opportunity__list-companent opportunity__delivery-button opportunity__list-companent_active"
+                  class="opportunity__list-companent opportunity__list-companent_active"
                 >
                   Доставка
                 </div>
-                <div class="opportunity__list-companent opportunity__guarantee-button">Гарантия</div>
-                <div class="opportunity__list-companent opportunity__credit-button">Кредит</div>
+                <div class="opportunity__list-companent">
+                  Гарантия
+                </div>
+                <div class="opportunity__list-companent">
+                  Кредит
+                </div>
               </div>
             </div>
             <div class="col-4">
@@ -693,8 +693,15 @@
     </div>
 
     <div class="visually-hidden modal modal-feedback-form">
-      <button type="button" class="modal-feedback-form__close modal__close"></button>
-      <form action="https://echo.htmlacademy.ru" class="modal-feedback-form__form" method="post">
+      <button
+        type="button"
+        class="modal-feedback-form__close modal__close"
+      ></button>
+      <form
+        action="https://echo.htmlacademy.ru"
+        class="modal-feedback-form__form"
+        method="post"
+      >
         <div class="modal-feedback-form__content">
           <div class="modal-feedback-form__contacts-wrapper">
             <div class="row">
@@ -737,14 +744,16 @@
               name="message"
               placeholder="В свободной форме"
               required
-            >
-            </textarea>
+            ></textarea>
           </div>
         </div>
 
         <div class="modal__actions">
           <div class="modal-feedback-form__content">
-            <button type="submit" class="button button_wide modal-feedback-form__submit">
+            <button
+              type="submit"
+              class="button button_wide modal-feedback-form__submit"
+            >
               Отправить
             </button>
           </div>
@@ -752,6 +761,20 @@
       </form>
     </div>
 
-    <script src="js/script.js"></script>
+    <div class="modal modal-cart-add visually-hidden">
+      <button type="button" class="modal__close modal-cart-add__close"></button>
+      <div class="modal-cart-add__content">
+        <p class="text-style-3 modal-cart-add__p">Товар добавлен в корзину!</p>
+      </div>
+      <div class="modal__actions">
+        <a class="button" href="blank.html">Оформить заказ</a>
+        <button class="button modal-cart-add__continue">
+          Продолжить покупки
+        </button>
+      </div>
+    </div>
+
+    <script src="js/common.min.js"></script>
+    <script src="js/index.min.js"></script>
   </body>
 </html>
