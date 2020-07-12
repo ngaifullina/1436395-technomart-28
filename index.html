@@ -180,18 +180,32 @@
               </div>
             </div>
             <div class="col-8">
-              <div class="options__slide">
-                <div class="options__slide-shadow">
-                  <h2 class="options__slide-heading">Перфораторы</h2>
-                  <p class="options__slide-p">Настоящие мужские игрушки</p>
+              <div class="options__slider">
+                <div class="options__slider-shadow">
+                  <h2 class="options__slider-heading">Перфораторы</h2>
+                  <p class="options__slider-p">Настоящие мужские игрушки</p>
                 </div>
-                <a href="blank.html" class="options__slide-previous"></a>
-                <a href="blank.html" class="options__slide-next"></a>
-                <a href="catalog.html" class="button options__slide-button">
+                <a href="blank.html" class="options__slider-previous"></a>
+                <a href="blank.html" class="options__slider-next"></a>
+                <a href="catalog.html" class="button options__slider-button">
                   Открыть каталог
                 </a>
                 <img
-                  class="wide"
+                  class="options__slide options__slide-0"
+                  src="./img/hammer-drill.jpg"
+                  alt="Перфоратор"
+                  height="266"
+                  width="620"
+                />
+                <img
+                  class="options__slide options__slide-1 visually-hidden"
+                  src="./img/hammer-drill.jpg"
+                  alt="Перфоратор"
+                  height="266"
+                  width="620"
+                />
+                <img
+                  class="options__slide options__slide-2 visually-hidden"
                   src="./img/hammer-drill.jpg"
                   alt="Перфоратор"
                   height="266"
@@ -199,14 +213,14 @@
                 />
               </div>
 
-              <div class="options__slide options__slide-next">
-                <div class="options__slide-shadow">
-                  <h2 class="options__slide-heading">Дрели</h2>
-                  <p class="options__slide-p">Соседям на радость!</p>
+              <div class="options__slider options__slider-next">
+                <div class="options__slider-shadow">
+                  <h2 class="options__slider-heading">Дрели</h2>
+                  <p class="options__slider-p">Соседям на радость!</p>
                 </div>
-                <a href="blank.html" class="options__slide-previous"></a>
-                <a href="blank.html" class="options__slide-next"></a>
-                <a href="catalog.html" class="button options__slide-button">
+                <a href="blank.html" class="options__slider-previous"></a>
+                <a href="blank.html" class="options__slider-next"></a>
+                <a href="catalog.html" class="button options__slider-button">
                   Открыть каталог
                 </a>
                 <img
@@ -428,16 +442,16 @@
             <div class="col-4">
               <div class="opportunity__list">
                 <div
-                  class="opportunity__list-companent opportunity__list-companent_active"
+                  class="opportunity__list-companent opportunity__delivery-button opportunity__list-companent_active"
                 >
                   Доставка
                 </div>
-                <div class="opportunity__list-companent">Гарантия</div>
-                <div class="opportunity__list-companent">Кредит</div>
+                <div class="opportunity__list-companent opportunity__guarantee-button">Гарантия</div>
+                <div class="opportunity__list-companent opportunity__credit-button">Кредит</div>
               </div>
             </div>
             <div class="col-4">
-              <div class="opportunity__changing-block-2 opportunity__delivery">
+              <div class="opportunity__changing-block opportunity__delivery">
                 <h2 class="heading-2 opportunity__heading">
                   Доставка
                 </h2>
@@ -451,7 +465,7 @@
               </div>
 
               <div
-                class="opportunity__changing-block opportunity__changing-block opportunity__guarantee"
+                class="opportunity__changing-block opportunity__guarantee visually-hidden"
               >
                 <h2 class="heading-2 opportunity__heading">
                   Гарантия
@@ -464,7 +478,7 @@
                 </p>
               </div>
               <div
-                class="opportunity__changing-block opportunity__changing-block-2 opportunity__credit"
+                class="opportunity__changing-block opportunity__credit visually-hidden"
               >
                 <h2 class="heading-2 opportunity__heading">
                   Кредит
@@ -511,7 +525,7 @@
             <p class="text-style-4 main__second-column_text">
               Вы можете забрать товар сами,<br />заехав в наш офис:
             </p>
-            <a href="#">
+            <a href="map.html" class="main__map">
               <img
                 class="wide"
                 src="img/map.png"
@@ -520,7 +534,7 @@
                 alt="Карта"
               />
             </a>
-            <a class="button wide write-us" href="blank.html">
+            <a class="button wide write-us" href="feedback.html">
               Заблудились? Напишите нам!
             </a>
           </div>
@@ -672,16 +686,15 @@
     </footer>
 
     <div class="visually-hidden modal modal-map">
-      <button type="button" class="modal__close"></button>
+      <button type="button" class="modal__close modal-map__close"></button>
       <a href="maps.google.com">
         <div class="modal-map__map"></div>
       </a>
     </div>
 
-    <!-- modal-feedback-form -->
-    <div class="visually-hidden modal">
-      <button type="button" class="modal__close"></button>
-      <form action="https://echo.htmlacademy.ru" method="post">
+    <div class="visually-hidden modal modal-feedback-form">
+      <button type="button" class="modal-feedback-form__close modal__close"></button>
+      <form action="https://echo.htmlacademy.ru" class="modal-feedback-form__form" method="post">
         <div class="modal-feedback-form__content">
           <div class="modal-feedback-form__contacts-wrapper">
             <div class="row">
@@ -731,12 +744,14 @@
 
         <div class="modal__actions">
           <div class="modal-feedback-form__content">
-            <button type="submit" class="button button_wide">
+            <button type="submit" class="button button_wide modal-feedback-form__submit">
               Отправить
             </button>
           </div>
         </div>
       </form>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
