@@ -44,13 +44,13 @@
                 Закладки: 0
               </a>
               <a
-                class="button header__shopping-controls"
+                class="button header__shopping-controls header__cart"
                 href="blank.html"
               >
                 Корзина: 10
               </a>
               <a
-                class="button button_secondary header__shopping-controls header__top-nav-element"
+                class="button button_secondary header__shopping-controls header__top-nav-element header__top-nav-element_narrow"
                 href="blank.html"
               >
                 Оформить заказ
@@ -359,7 +359,7 @@
                   />
 
                   <div class="product__buy-save">
-                    <a class="button_secondary" href="blank.html">
+                    <a class="button_secondary product__buy" href="blank.html">
                       Купить
                     </a>
                     <a class="button_tertiary" href="blank.html">
@@ -381,7 +381,7 @@
                   />
 
                   <div class="product__buy-save">
-                    <a class="button_secondary" href="blank.html">
+                    <a class="button_secondary product__buy" href="blank.html">
                       Купить
                     </a>
                     <a class="button_tertiary" href="blank.html">
@@ -406,7 +406,7 @@
                     />
                   </a>
                   <div class="product__buy-save">
-                    <a class="button_secondary" href="blank.html">
+                    <a class="button_secondary product__buy" href="blank.html">
                       Купить
                     </a>
                     <a class="button_tertiary" href="blank.html">
@@ -427,7 +427,7 @@
                     alt="Перфоратор BOSCH BFG 3000"
                   />
                   <div class="product__buy-save">
-                    <a class="button_secondary" href="blank.html">
+                    <a class="button_secondary product__buy" href="blank.html">
                       Купить
                     </a>
                     <a class="button_tertiary" href="blank.html">
@@ -448,7 +448,7 @@
                     alt="Перфоратор BOSCH BFG 6000"
                   />
                   <div class="product__buy-save">
-                    <a class="button_secondary" href="blank.html">
+                    <a class="button_secondary product__buy" href="blank.html">
                       Купить
                     </a>
                     <a class="button_tertiary" href="blank.html">
@@ -470,7 +470,7 @@
                   />
                   <div class="new-ribbon">New</div>
                   <div class="product__buy-save">
-                    <a class="button_secondary" href="blank.html">
+                    <a class="button_secondary product__buy" href="blank.html">
                       Купить
                     </a>
                     <a class="button_tertiary" href="blank.html">
@@ -497,7 +497,7 @@
                   />
                   <div class="new-ribbon">New</div>
                   <div class="product__buy-save">
-                    <a class="button_secondary" href="blank.html">
+                    <a class="button_secondary product__buy" href="blank.html">
                       Купить
                     </a>
                     <a class="button_tertiary" href="blank.html">
@@ -518,7 +518,7 @@
                     alt="Перфоратор BOSCH BFG 6000"
                   />
                   <div class="product__buy-save">
-                    <a class="button_secondary" href="blank.html">
+                    <a class="button_secondary product__buy" href="blank.html">
                       Купить
                     </a>
                     <a class="button_tertiary" href="blank.html">
@@ -540,7 +540,7 @@
                   />
                   <div class="new-ribbon">New</div>
                   <div class="product__buy-save">
-                    <a class="button_secondary" href="blank.html">
+                    <a class="button_secondary product__buy" href="blank.html">
                       Купить
                     </a>
                     <a class="button_tertiary" href="blank.html">
@@ -731,10 +731,9 @@
       </div>
     </footer>
 
-    <!-- modal-cart-add -->
-    <div class="visually-hidden modal modal-cart-add">
-      <button type="button" class="modal__close"></button>
-      <div class="modal modal-cart-add__content">
+    <div class="modal modal-cart-add visually-hidden">
+      <button type="button" class="modal__close modal-cart-add__close"></button>
+      <div class="modal-cart-add__content">
         <p class="text-style-3 modal-cart-add__p">Товар добавлен в корзину!</p>
       </div>
       <div class="modal__actions">
@@ -744,5 +743,7 @@
         </button>
       </div>
     </div>
+
+    <script src="js/common.min.js"></script>
   </body>
 </html>
