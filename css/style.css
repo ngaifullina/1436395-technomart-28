@@ -1649,7 +1649,6 @@ img {
   margin-bottom: 18px;
 }
 
-/* todo these are not elements of panel, but elements of filters */
 .panel__filter-sort_part {
   display: block;
   white-space: nowrap;
@@ -1724,7 +1723,6 @@ img {
   width: 220px;
 }
 
-/* todo no styles on tags */
 ul.list-unstyle.filter {
   padding-top: 8px;
 }
