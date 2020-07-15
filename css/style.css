@@ -1294,8 +1294,8 @@ img {
   background-image: url("../img/svg-technomart/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  right: 269px;
-  top: 102px;
+  right: 19px;
+  top: 14px;
 }
 
 .header__login:active {
@@ -1506,6 +1506,10 @@ img {
   opacity: 0.3;
 }
 
+.header__shopping-controls:nth-child(2):hover::before {
+  opacity: 1;
+}
+
 .header__saved {
   padding-left: 43px;
   position: relative;
@@ -1565,12 +1569,6 @@ img {
 .modal-map {
   width: 943px;
   height: 449px;
-}
-
-.modal-map__map {
-  background: url("../img/map-modal.png") no-repeat center center;
-  background-size: cover;
-  height: 100%;
 }
 
 .modal-feedback-form__content,
@@ -1871,6 +1869,7 @@ ul.list-unstyle.filter {
   line-height: 20px;
   width: 185px;
   text-align: center;
+  color: black;
 }
 
 .product__old-price {
@@ -1943,6 +1942,7 @@ ul.list-unstyle.filter {
   display: flex;
   margin-left: auto;
   flex-direction: column;
+  position: relative;
 }
 
 .header__heading {
@@ -2468,6 +2468,15 @@ ul.list-unstyle.filter {
   border: 1px solid var(--light-grey);
 }
 
+.brand:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.brand:active {
+  opacity: 0.5;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
 .brand__image {
   max-width: 80%;
 }
@@ -2622,6 +2631,14 @@ ul.list-unstyle.filter {
   border: 1px solid #e5e5e5;
   box-sizing: border-box;
   border-radius: 2px;
+}
+
+.pagination__number:hover {
+  border-color: #C5C5C5;
+}
+
+.pagination__number:active {
+  border-color: #EE3643;
 }
 
 .pagination__next {
